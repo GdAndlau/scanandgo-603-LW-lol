@@ -4,22 +4,17 @@
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
-  .nav-container{
-    max-width: 100%;
-    padding: 0.5em 0em;
-    text-align: center;
-    background: linear-gradient(#DA52FE, #9198e5);
-  }
-
-  .nav-content{
-    display: flex;
-    justify-content: center;
-  }
-
-  .ampersand{
+  .fas {
+    font-size: 45px;
     color: white;
-    margin: 0px 5px;
+    padding-top: 15px;
+  }
+
+  .fa-arrow-left{
+    font-size: 25px;
+    position: relative;
+    right: 65px;
+    bottom: 2px;
   }
 }
 
@@ -29,17 +24,13 @@
   and (min-device-width: 414px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
-  .nav-content{
-    display: flex;
-    justify-content: center;
-  }
-
-  .ampersand{
-    color: white;
-    padding: 0px 5px;
+  .fa-arrow-left{
+    font-size: 25px;
+    position: relative;
+    right: 85px;
+    bottom: 2px;
   }
 }
-
 
 /* ----------- iPhone X ----------- */
 /* Portrait and Landscape */
@@ -47,9 +38,7 @@
   and (min-device-width: 375px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
-  .ampersand{
-    color: white;
-    padding: 0px 10px;
+  .fa-arrow-left{
+    right: 55px;
   }
-
 }

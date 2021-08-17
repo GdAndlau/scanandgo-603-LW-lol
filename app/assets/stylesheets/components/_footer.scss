@@ -5,51 +5,36 @@
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-  .nav-container{
-    max-width: 100%;
-    padding: 0.5em 0em;
-    text-align: center;
+  .bottom-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background: linear-gradient(#DA52FE, #9198e5);
   }
 
-  .nav-content{
+  .bottom-icones{
     display: flex;
-    justify-content: center;
-  }
-
-  .ampersand{
-    color: white;
-    margin: 0px 5px;
+    justify-content: space-around;
   }
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
 /* Portrait and Landscape */
 @media only screen
   and (min-device-width: 414px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
-  .nav-content{
-    display: flex;
-    justify-content: center;
-  }
 
-  .ampersand{
-    color: white;
-    padding: 0px 5px;
-  }
 }
 
 
 /* ----------- iPhone X ----------- */
+
 /* Portrait and Landscape */
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
-  .ampersand{
-    color: white;
-    padding: 0px 10px;
-  }
 
 }
