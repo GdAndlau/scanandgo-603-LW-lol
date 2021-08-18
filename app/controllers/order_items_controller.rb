@@ -8,7 +8,7 @@ class OrderItemsController < ApplicationController
     @order_item.order = @order
 
     if @order_item.save!
-      redirect_to root_path
+      redirect_to product_path(@product_id)
     else
       render "products/show"
     end
