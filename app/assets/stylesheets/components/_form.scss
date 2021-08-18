@@ -1,0 +1,78 @@
+// background image for the edit
+.edit-container{
+  background-image: url("image_2.png");
+  opacity: 85%;
+  background-size: cover;
+  background-size: 100%;
+  margin:0px;
+}
+
+// background image for the new
+.new-container{
+  background-image: url("image_1.png");
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+// form info
+
+.form-title{
+  font-size: 2em;
+  color: white;
+}
+
+.form-container{
+  max-width: 100%;
+  padding: 1em 3em 2em 3em;
+  margin: 0em auto;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.2);
+  background-image: url("img_tree.gif");
+  text-align: center;
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .form-container{
+      padding-bottom: 70px;
+    }
+}
+
+
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .form-container{
+      padding-bottom: 124px;
+    }
+}
+
+.go-back{
+  text-align: right;
+  padding: 10px;
+}
+
+.sign-up-info {
+  width: 299px;
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+// sign-up IDs
+
+#user_card_number, #user_first_name, #user_last_name, #user_email, #user_password, #user_password_confirmation, #user_payment_details, #user_current_password{
+  width: 299px;
+  border-radius: 10px;
+}
