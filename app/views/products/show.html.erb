@@ -1,0 +1,12 @@
+<div class="container">
+<%= cl_image_tag(@product.image,
+      width: 400, height: 300, crop: :fill) %>
+<h2> <%= @product.title %> </h2>
+<p> <%= @product.description %> </p>
+<p> <%= @product.price %>EUR </p>
+
+<%= simple_form_for [@product, @order_item] do |f| %>
+    <%= f.submit "Add to cart"%>
+<% end %>
+<%= link_to 'Go back', root_path%>
+</div>
