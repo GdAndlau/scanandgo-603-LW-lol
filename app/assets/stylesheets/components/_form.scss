@@ -12,8 +12,7 @@
 .new-container{
   background-image: url("image_1.png");
   background-repeat: repeat;
-  background-size: 100%;
-  max-width: 100%;
+  // background-size: 100%;
 }
 
 // form info
@@ -43,6 +42,10 @@
     .form-container{
       padding-bottom: 70px;
     }
+    .new-container{
+      width: 414px;
+      height: 736px;
+    }
 }
 
 
@@ -55,7 +58,26 @@
     .form-container{
       padding-bottom: 124px;
     }
+    .new-container{
+      width: 375px;
+      height: 812px;
+    }
 }
+
+// @media only screen
+//   and (min-device-width: 375px)
+//   and (max-device-width: 667px)
+//   and (-webkit-min-device-pixel-ratio: 3) {
+//     .form-container{
+//       padding-bottom: 124px;
+//     }
+//     .new-container{
+//       width: 375px;
+//       height: 736px;
+//     }
+// }
+
+
 
 .go-back{
   text-align: right;

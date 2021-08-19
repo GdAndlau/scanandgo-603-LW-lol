@@ -3,39 +3,22 @@
   <div class="new-container">
     <div class="form-container">
       <i class="fas fa-user-circle" ></i>
-      <h2 class="form-title">Login In</h2>
-        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <h2 class="form-title">Log In</h2>
+      <% raise  %>
+        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <%= f.error_notification %>
-          <%= f.input :first_name,
-                      required: true,
-                      autofocus: true,
-                      placeholder: "First Name",
-                      label: false %>
-          <%= f.input :last_name,
-                      required: true,
-                      autofocus: true,
-                      placeholder: "Last Name",
-                      label: false %>
           <%= f.input :email,
                       required: true,
                       autofocus: true,
                       placeholder: "Email",
-                      label: false %>
-          <%= f.input :card_number,
-                      required: true,
-                      autofocus: true,
-                      placeholder: "Credit card details",
                       label: false %>
           <%= f.input :password,
                       required: true,
                       hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                       placeholder: "Password",
                       label: false %>
-          <%= f.input :password_confirmation,
-                      required: true,
-                      placeholder: "Confirm Password",
-                      label: false %>
-        <button class="btn-SignUp"><%= f.button :submit, "Sign up!" %></button>
+
+        <button class="btn-SignUp"><%= f.button :submit, "Log in!" %></button>
         <% end %>
       <div class="go-back">
         <%# <%= render "devise/shared/links" %>
