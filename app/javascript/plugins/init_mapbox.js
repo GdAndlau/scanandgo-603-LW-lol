@@ -38,3 +38,27 @@ const initMapbox = () => {
 };
 
 export { initMapbox };
+// Is the above relevant?
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiaWV2YS1hbGVrc2FuZHJhdmljYSIsImEiOiJja3JxZTJ6MmgwN3NtMnhvMHp3cW4zY2F0In0.mYrJLfgBZnIaGQJzO6x6fg';
+  const geocoder = new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      types: 'country,region,place,postcode,locality,neighborhood'
+  });
+
+geocoder.addTo('#geocoder');
+
+// Get the geocoder results container.
+  const results = document.getElementById('result');
+
+// Add geocoder result to container.
+  geocoder.on('result', (e) => {
+      let coordinates = JSON.stringify(e.result, null, 2);
+      results.innerText = coordinates
+  });
+
+// Clear results container when search is cleared.
+  geocoder.on('clear', () => {
+      results.innerText = '';
+  });
+

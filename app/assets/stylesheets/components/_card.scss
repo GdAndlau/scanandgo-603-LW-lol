@@ -1,0 +1,44 @@
+.card-main-container{
+  background-color: white;
+}
+
+.card-main-content{
+
+}
+
+.title-card-find{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+#geocoder{
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title-check-in-now{
+  text-align: center;
+}
+
+.store-card-main{
+  border-style: solid;
+  border-radius: 25px;
+  border-color: #9842DB;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.store-title-card{
+  display:inline;
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.store-address-card, .store-distance-card{
+  margin: 0px 0px 10px 10px;
+}
+
+
+
+
