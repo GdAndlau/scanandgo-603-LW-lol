@@ -6,7 +6,7 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
   .bottom-container{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background: linear-gradient(#DA52FE, #9198e5);
