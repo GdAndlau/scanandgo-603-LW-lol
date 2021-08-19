@@ -21,7 +21,7 @@
     <div class="store-card-container">
       <% @stores.each do |store| %>
       <div class="store-card-main">
-        <p class="store-title-card"><%= store.name %></p><a href=""><i class="fas fa-info-circle"></i></a>
+        <p class="store-title-card"><%= store.name %></p><a href="/stores/<%=store.id%>"><i class="fas fa-info-circle"></i></a>
         <p class="store-address-card"><%= store.address %></p>
         <p class="store-distance-card"><%= %>m away</p>
       </div>
