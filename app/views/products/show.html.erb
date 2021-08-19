@@ -1,19 +1,26 @@
+<%= render 'shared/navbar' %>
 <div class="container">
-<%= cl_image_tag(@product.image,
-      width: 400, height: 300, crop: :fill) %>
-<h2> <%= @product.title %> </h2>
-<p> <%= @product.description %> </p>
-<p> <%= @product.price %>EUR </p>
-
-<%= simple_form_for [@product, @order_item] do |f| %>
-    <%= f.submit "Add to cart"%>
-<% end %>
-
-
-<% @all_order_items.each do |item| %>
-  <p><%= item.product.title %> - EUR <%= item.product.price %>
-  </p>
-<%end  %>
+  <div class="container product-image-container">
+    <%= cl_image_tag(@product.image,
+    width: 300, height: 300, crop: :fill) %>
+  </div>
+  <div class="container product-info-container">
+    <div class="product-info-title-price">
+      <h2> <%= @product.title %> </h2>
+      <p> <%= @product.price %>EUR </p>
+    </div>
+    <p> <%= @product.description %> </p>
+  </div>
+  <div class="container">
+    <%= simple_form_for [@product, @order_item] do |f| %>
+      <%= f.submit "Add to cart", class: ' main-button' %>
+    <% end %>
+  </div>
+  <%# <% @all_order_items.each do |item| %>
+    <%#<p><%= item.product.title %> 
+    <%#- EUR <%= item.product.price %><%#</p>
+  <%#<%end%>
 </div>
+  <%= render 'shared/footer' %>
 
 

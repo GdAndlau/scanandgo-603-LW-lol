@@ -75,6 +75,7 @@ Product.create!(
   )
 Product.create!(
   title: "Jeans",
+  description: "Fit Jeans",
   price: 30,
   store: Store.where(name: "H&M").first,
   image: "ftoamgssapv96bdq5qkt"
@@ -82,6 +83,7 @@ Product.create!(
 
 Product.create!(
   title: "Watch",
+  description: "Fancy watch",
   price: 45,
   store: Store.where(name: "Douglas").first,
   image: "jfvd1mnuldsswypivqyg"
