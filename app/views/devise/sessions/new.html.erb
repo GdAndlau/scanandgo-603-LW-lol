@@ -3,8 +3,8 @@
   <div class="new-container">
     <div class="form-container">
       <i class="fas fa-user-circle" ></i>
-      <h2 class="form-title">Login</h2>
-        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <h2 class="form-title">Log In</h2>
+        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <%= f.error_notification %>
           <%= f.input :email,
                       required: true,
@@ -16,7 +16,7 @@
                       hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                       placeholder: "Password",
                       label: false %>
-        <button class="btn-SignUp"><%= f.button :submit, "Sign up!" %></button>
+        <button class="btn-SignUp"><%= f.button :submit, "Log in!" %></button>
         <% end %>
       <div class="go-back">
         <%# <%= render "devise/shared/links" %>
