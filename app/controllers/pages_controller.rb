@@ -7,4 +7,8 @@ class PagesController < ApplicationController
     else
     end
   end
+
+  def index
+  end
+
 end

@@ -36,9 +36,15 @@
                         label: false  %>
         <button class="btn-SignUp"><%= f.button :submit, "Update" %></button>
       <% end %>
+  <div class="destory-buttons-container">
+    <p><%= button_to "Cancel my account", root_path, data: { confirm: "Are you sure?" }, method: :delete, class:"cancel-my-account" %></p>
 
-      <p><%= link_to "Cancel my account", root_path, data: { confirm: "Are you sure?" }, method: :delete %></p>
-      <p><%= link_to "Log out", root_path, method: :delete %></p>
+    <p><%= button_to "Log out", destroy_user_session_path, method: :delete, class:"log-out"%></p>
+  </div>
+
+
+
+
     </div>
   </div>
   <%= render 'shared/footer' %>
