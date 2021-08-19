@@ -1,28 +1,36 @@
-<div class="input-group input-group-sm mb-3">
-  <span class="input-group-text" id="inputGroup-sizing-sm">Storefinder</span>
-    <input type="search" id="store-search" placeholder="Look for a store in ..." />
-</div>
+<div class="card-main-container">
+  <%= render 'shared/navbar' %>
+  <div class="card-main-content">
 
-<div id="geocoder"></div>
-<pre id="result"></pre>
+    <%# <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Storefinder</span>
+        <input type="search" id="store-search" placeholder="Look for a store in ..." />
+    </div> %>
 
-<div class="title-check-in-now">
-  <h2>Check in now!</h2>
-</div>
+    <div class="title-card-find">
+      <h2><b style="color:purple">Find</b> your shop</h2>
+    </div>
 
-<div class="store-card-container">
+    <div id="geocoder"></div>
+    <pre id="result"></pre>
 
-  <% @stores.each do |store| %>
-  <div class="store-card-main">
-    <p class="store-title-card"><%= store.name %></p><a href=""><i class="fas fa-info-circle"></i></a>
-    <p class="store-address-card"><%= store.address %></p>
-    <p class="store-distance-card"><%= %>m away</p>
+    <div class="title-check-in-now">
+      <h2>Check in now!</h2>
+    </div>
+
+    <div class="store-card-container">
+      <% @stores.each do |store| %>
+      <div class="store-card-main">
+        <p class="store-title-card"><%= store.name %></p><a href=""><i class="fas fa-info-circle"></i></a>
+        <p class="store-address-card"><%= store.address %></p>
+        <p class="store-distance-card"><%= %>m away</p>
+      </div>
+
+      <div id="map" class="store-card-map">
+      </div>
+      <% end%>
+    </div>
   </div>
-  <% end%>
+  <%= render 'shared/footer' %>
 </div>
 
-
-
-
-
-<%# @stores.each do |store| %>
