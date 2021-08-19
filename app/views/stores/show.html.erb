@@ -1,0 +1,23 @@
+<div class="store-show-container">
+  <%= render 'shared/navbar' %>
+  <div class="store-grey-background">
+    <div class="store-show-card">
+      <div class="store-show-image">
+
+      </div>
+      <div class="store-show-info">
+        <div class="store-show-title">
+          <%= @store.name %>
+        </div>
+        <div class="store-show-content">
+          <%= @store.address %><br>
+          <%= @store.opening_hours %>
+        </div>
+        <div class="store-show-btn">
+          <button class="btn-SignUp">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
