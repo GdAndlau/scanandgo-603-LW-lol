@@ -1,0 +1,36 @@
+.scanner-background{
+  background-color: lightgrey;
+  padding: 190px 0px;
+}
+
+.image-scanner{
+  background-image: url("scanner.png");
+  height: 155px;
+  width: 220px;
+  margin: 0 auto;
+}
+
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .scanner-background{
+      padding: 220px 0px;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .scanner-background{
+      padding: 270px 0px;
+    }
+}
