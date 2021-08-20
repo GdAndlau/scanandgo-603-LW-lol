@@ -20,4 +20,22 @@ background: linear-gradient(
   background-size: cover;
 }
 
+.options {
+    margin: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
 
+.option-left {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+
+}
+
+.option-right {
+    text-decoration: none;
+    color: white;
+}

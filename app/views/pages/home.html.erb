@@ -4,6 +4,7 @@
 #render -->
   <div class="background-image">
     <div class="form-container">
+
       <i class="fas fa-user-circle mt-5" ></i>
       <h2 class="form-title  mb-5">MEMBER LOGIN</h2>
         <h1 class="welcome">Welcome to
@@ -11,4 +12,10 @@
         <%= image_tag "logo2.PNG", alt: "ScanAndGo", width: 200, class: "logo mb-5" %>
         <%= render 'shared/login', resource: User.new, resource_name: :user %>
     </div>
+     <div class="options">
+       <%= link_to('SignUp', new_user_registration_path, class: "option-left") %>
+    <%= link_to('Reset Password', new_user_registration_path, class: "option-right") %>
   </div>
+
+</div>
+
