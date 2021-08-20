@@ -6,12 +6,17 @@
                       required: true,
                       autofocus: true,
                       placeholder: "Email",
-                      label: false %>
+                      label: false,
+                      input_html: { class: "input-field" } %>
           <%= f.input :password,
                       required: true,
                       # hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                       placeholder: "Password",
-                      label: false %>
+                      label: false,
+                      input_html: { class: "input-field" }%>
 
-        <button class="btn-SignUp"><%= f.button :submit, "Log in!" %></button>
+       <%= f.button :submit, "Log in", class: "btn-SignUp btn-block" %>
         <% end %>
+
+
+
