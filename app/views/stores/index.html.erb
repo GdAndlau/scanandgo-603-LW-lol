@@ -1,4 +1,3 @@
-<div class="card-main-container">
   <%= render 'shared/navbar' %>
   <div class="card-main-content">
 
@@ -7,23 +6,23 @@
         <input type="search" id="store-search" placeholder="Look for a store in ..." />
     </div> %>
 
-    <div class="title-card-find">
-      <h2><b style="color:purple">Find</b> your shop</h2>
+    <div class="secondary-title title-card-find title-text-color">
+      <h2><b style="color:purple">Shops</b> near you</h2>
     </div>
 
-    <div id="geocoder"></div>
-<!--     <pre id="result"></pre>
- -->
-    <div class="title-check-in-now">
+<!--     <div id="geocoder"></div>
+    <pre id="result"></pre> -->
+
+<!--     <div class="title-check-in-now">
       <h2>Check in now!</h2>
-    </div>
+    </div> -->
 
-    <div class="store-card-container">
+    <div class="store-card-container scroll-touch">
       <% @stores.each do |store| %>
       <div class="store-card-main">
         <p class="store-title-card"><%= store.name %></p><a href="/stores/<%=store.id%>"><i class="fas fa-info-circle"></i></a>
         <p class="store-address-card"><%= store.address %></p>
-        <p class="store-distance-card"><%= %>m away</p>
+        <p class="store-distance-card"><%= %>25 m away</p>
       </div>
 
       <div id="map" class="store-card-map"></div>
@@ -31,5 +30,4 @@
     </div>
   </div>
   <%= render 'shared/footer' %>
-</div>
 

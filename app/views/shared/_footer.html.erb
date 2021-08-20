@@ -1,13 +1,17 @@
 <div class="bottom-container">
   <div class="bottom-icones">
-    <p>
     <%= link_to edit_user_registration_path, resource: current_user, resource_name: :user do%>
-      <i class="fas fa-user-circle" ></i>
+      <div class="icon">
+        <i class="fas fa-user-circle" ></i>
+      </div>
     <% end %>
-      </p>
-    <p><i class="fas fa-shopping-cart"></i></p>
-    <p><i class="fas fa-house-user"></i></p>
-  </div>
+      <div class="cart">
+        <i class="fas fa-shopping-basket"></i></i>
+      </div>
+      <div class="icon">
+        <i class="fas fa-house-user"></i>
+      </div>
+    </div>
 </div>
 
 
