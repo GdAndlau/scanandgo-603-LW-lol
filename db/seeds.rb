@@ -65,6 +65,24 @@ Store.create!(
   )
 puts "Stores created"
 puts "------------"
+puts "2. Creating 3 stores"
+Store.create!(
+  name: "Zara",
+  address: "Tauentzienstraße 7a, 10789 Berlin",
+  opening_hours: "9 am - 10 pm"
+  )
+Store.create!(
+  name: "H&M",
+  address: "Kurfürstendamm 237, 10719 Berlin",
+  opening_hours: "9 am -18 am"
+  )
+Store.create!(
+  name: "Douglas",
+  address: "Wilmersdorfer Str. 46, 10627 Berlin",
+  opening_hours: "9 am -21 pm"
+  )
+puts "Stores created"
+puts "------------"
 
 puts "3. Creating 3 products"
 Product.create!(
