@@ -1,29 +1,16 @@
 <div class="new-main">
   <%= render 'shared/navbar' %>
-  <div class="new-container">
+ <!-- # if user is logged in do stores
+# if user is not logged in login
+#current_user
+#render -->
+  <div class="background-image">
     <div class="form-container">
-      <i class="fas fa-user-circle" ></i>
-      <h2 class="form-title">Log In</h2>
-        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        <%= f.error_notification %>
-          <%= f.input :email,
-                      required: true,
-                      autofocus: true,
-                      placeholder: "Email",
-                      label: false %>
-          <%= f.input :password,
-                      required: true,
-                      hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                      placeholder: "Password",
-                      label: false %>
-
-        <button class="btn-SignUp"><%= f.button :submit, "Log in!" %></button>
-        <% end %>
-      <div class="go-back">
-        <%# <%= render "devise/shared/links" %>
-        <%= link_to "Go Back", root_path %>
-      </div>
+      <i class="fas fa-user-circle " ></i>
+      <h2 class="form-title  mb-5">MEMBER LOGIN</h2>
+        <%= render 'shared/login', resource: User.new, resource_name: :user %>
     </div>
   </div>
+
   <%= render 'shared/footer' %>
 </div>
