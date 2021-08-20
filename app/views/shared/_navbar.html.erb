@@ -1,6 +1,8 @@
 <div class="nav-container">
   <div class="nav-content">
-    <i class="fas fa-arrow-left stick-left"></i>
-    <h1 class="title">Scan<span class="ampersand">&</span>Go</h1>
+    <%= link_to :back, class: "back-arrow" do%>
+      <i class="fas fa-arrow-left stick-left"> </i>
+    <% end %>
+    <%= image_tag "logo2.PNG", alt: "ScanAndGo", width: 150, class: "logo" %>
   </div>
 </div>
