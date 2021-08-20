@@ -6,18 +6,3 @@
   color: #5b0c9a;
   font-weight: bolder;
 }
-
-.background-image{
-background: linear-gradient(
-    to bottom,
-    rgba(218, 82, 254, 0.7),
-    rgba(112, 58, 242, 0.7)
-  ),url("image_2.png");
-  background-repeat: repeat;
-  background-height: 100vh;
-  min-height: 100vh;
-  margin: 0;
-  background-size: cover;
-}
-
-

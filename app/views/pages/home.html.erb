@@ -2,13 +2,12 @@
 # if user is not logged in login
 #current_user
 #render -->
-  <div class="background-image">
+  <div class="new-container">
     <div class="form-container">
       <i class="fas fa-user-circle mt-5" ></i>
-      <h2 class="form-title  mb-5">MEMBER LOGIN</h2>
-        <h1 class="welcome">Welcome to
+      <h2 class="form-title  mb-5">Member Login</h2>
+        <h1 class="welcome">Welcome to <span class="title-color">Scan</span>&<span class="title-color">Go!</span>
         </h1>
-        <%= image_tag "logo2.PNG", alt: "ScanAndGo", width: 200, class: "logo mb-5" %>
         <%= render 'shared/login', resource: User.new, resource_name: :user %>
     </div>
   </div>
