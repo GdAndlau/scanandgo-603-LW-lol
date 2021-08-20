@@ -5,31 +5,32 @@
   background-size: 100%;
   margin:0px;
   max-width: 100%;
-
-  background: linear-gradient(
-    to bottom,
-    rgba(218, 82, 254, 0.7),
-    rgba(112, 58, 242, 0.7)
-  ),url("image_2.png");
 }
 
 // background image for the new
 .new-container{
-  background-image: url("image_1.png");
-  background-repeat: repeat;
-  background-height: 100vh;
-  background-weight: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(218, 82, 254, 0.7),
+    rgba(112, 58, 242, 0.7)
+  ), url("image_2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-bottom: 30px;
   margin: 0;
-  // background-size: 100%;
 }
 
 // form info
 
 .form-title{
-  font-size: 1em;
+  font-size: 16px;
   color: white;
-  font-weight: 500;
-  margin-top: 20px;
+  font-weight: 900;
+  margin-top: 10px;
 }
 
 .form-container{
@@ -44,7 +45,6 @@
 .form-group {
   display:flex;
   justify-content: space-around;
-  // margin: 0;
 }
 
 .input-field {
@@ -74,7 +74,7 @@
 
 /* ----------- iPhone X ----------- */
 /* Portrait and Landscape */
-@media only screen
+/* @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
@@ -86,7 +86,7 @@
     //   height: 812px;
     // }
 }
-
+ */
 // @media only screen
 //   and (min-device-width: 375px)
 //   and (max-device-width: 667px)
@@ -105,6 +105,10 @@
 .go-back{
   text-align: right;
   padding: 10px;
+
+  a{ 
+  color: white;
+  }
 }
 
 .sign-up-info {

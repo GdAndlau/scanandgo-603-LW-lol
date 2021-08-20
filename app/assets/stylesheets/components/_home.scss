@@ -1,5 +1,15 @@
+.fas.fa-user-circle {
+  font-size: 55px;
+  color: white;
+}
+
 .welcome {
   color: white;
+  font-size: 36px;
+}
+
+.logo {
+  margin-bottom: 70px;
 }
 
 .title-color {
@@ -8,23 +18,27 @@
 }
 
 .background-image{
-background: linear-gradient(
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
     to bottom,
     rgba(218, 82, 254, 0.7),
     rgba(112, 58, 242, 0.7)
-  ),url("image_2.png");
-  background-repeat: repeat;
-  background-height: 100vh;
-  min-height: 100vh;
-  margin: 0;
+  ), url("image_1.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-bottom: 30px;
+  margin: 0;
 }
 
 .options {
-    margin: 8px 20px;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    margin: 8px 20px;
+    padding-top: 20px;
 }
 
 .option-left {
