@@ -12,25 +12,43 @@
 .new-container{
   background-image: url("image_1.png");
   background-repeat: repeat;
+  background-height: 100vh;
+  background-weight: 100vh;
+  margin: 0;
   // background-size: 100%;
 }
 
 // form info
 
 .form-title{
-  font-size: 2em;
+  font-size: 1em;
   color: white;
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 .form-container{
-  max-width: 100%;
-  padding: 1em 3em 2em 3em;
-  margin: 0em auto;
+  // padding: 1em 3em 2em 3em;
+  margin: 0 16px;
   border-radius: 10px;
-  box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.2);
+  // box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.2);
   background-image: url("img_tree.gif");
   text-align: center;
+}
 
+.form-group {
+  display:flex;
+  justify-content: space-around;
+  // margin: 0;
+}
+
+.input-field {
+  text-align:center;
+}
+
+.form-control:focus {
+  border-color: rgba(112, 58, 242, 0.7);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
@@ -42,10 +60,10 @@
     .form-container{
       padding-bottom: 70px;
     }
-    .new-container{
-      width: 414px;
-      height: 736px;
-    }
+    // .new-container{
+    //   width: 414px;
+    //   height: 736px;
+    // }
 }
 
 
@@ -58,10 +76,10 @@
     .form-container{
       padding-bottom: 124px;
     }
-    .new-container{
-      width: 375px;
-      height: 812px;
-    }
+    // .new-container{
+    //   width: 375px;
+    //   height: 812px;
+    // }
 }
 
 // @media only screen
@@ -98,6 +116,6 @@
 // sign-up IDs
 
 #user_card_number, #user_first_name, #user_last_name, #user_email, #user_password, #user_password_confirmation, #user_payment_details, #user_current_password{
-  width: 299px;
+  // width: 299px;
   border-radius: 10px;
 }
