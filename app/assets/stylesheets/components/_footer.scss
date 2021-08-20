@@ -5,9 +5,14 @@
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+  .footer-fill {
+    height: 80px;
+  }
+
   .bottom-container{
     position: fixed;
     bottom: 0;
+    height: 80px;
     width: 100%;
     background: linear-gradient(#DA52FE, #9198e5);
   }
@@ -43,7 +48,6 @@
   and (-webkit-min-device-pixel-ratio: 3) {
 
 }
-
 
 /* ----------- iPhone X ----------- */
 

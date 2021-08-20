@@ -1,5 +1,5 @@
 <%= render 'shared/navbar' %>
-<div class="container">
+<div class="container product-info">
   <div class="container product-image-container">
     <%= cl_image_tag(@product.image,
     width: 300, height: 300, crop: :fill) %>
@@ -21,6 +21,6 @@
     <%#- EUR <%= item.product.price %><%#</p>
   <%#<%end%>
 </div>
-  <%= render 'shared/footer' %>
+<%= render 'shared/footer' %>
 
 
