@@ -17,16 +17,16 @@
         <i class="fas fa-shopping-basket"></i>
         <p><%= items_count %> </p>
       </div>
-
       <% end %>
-      <div class="icon popup" onclick="myFunction()">
+
+      <div class="icon popup" id="open-popup-trigger">
         <i class="fas fa-house-user"></i><span class="popuptext" id="myPopup">
 
         Your current session will be destroy and you will be logged out of the shop <br><br>
         Do you wanna check-out of this shop? <br><br>
 
           <%= link_to "Yes, I want to leave the shop", root_path%><br>
-          <div onclick="closepopup()">No, I want to stay in this shop</div>
+          <div id="close-popup-trigger">No, I want to stay in this shop</div>
 
         </span>
 

@@ -31,14 +31,14 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 import { initMapbox } from '../plugins/init_mapbox';
 import {food}  from '../food';
-import { myFunction } from '../popup'
-import { closepopup } from '../popup'
+import { handlePopups } from '../popup'
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 /*     initMapbox(); */
  food()
- myFunction()
- closepopup()
+ handlePopups()
+
 });
