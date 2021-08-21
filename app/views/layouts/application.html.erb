@@ -16,6 +16,19 @@
     <%#<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">%>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+    <script>
+    // When the user clicks on div, open the popup
+    function closepopup(){
+      popup.close ();
+    }
+
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+
   </head>
   <body>
     <%= yield %>
