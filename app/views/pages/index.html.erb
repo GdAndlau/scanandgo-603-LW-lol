@@ -1,7 +1,15 @@
+<% product_ids = [] %>
+<% Product.all.each do |product| %>
+  <% product_ids.push(product.id) %>
+<% end %>
+<% product = product_ids.sample%>
+
 <div class="scanner-container">
   <%= render 'shared/navbar' %>
   <div class="scanner-background">
-    <div class="image-scanner"></div>
+    <%= link_to product_path(product) do %>
+     <div class="image-scanner"></div>
+    <% end %>
   </div>
   <%= render 'shared/footer' %>
 </div>
