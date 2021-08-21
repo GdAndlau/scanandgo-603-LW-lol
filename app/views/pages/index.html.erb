@@ -13,18 +13,18 @@
   <%= render 'shared/navbar' %>
 
   <% flash.each do |type, msg| %>
-  <div id="conf-message" class="alert alert-info">
+    <div id="conf-message" class="alert alert-info">
     <%= msg %>
-  </div>
-<% end %>
+    </div>
+  <% end %>
 
   <div class="scanner-background">
     <%= link_to product_path(product) do %>
      <div class="image-scanner"></div>
     <% end %>
   </div>
-<% if items_count > 0  %>
-  <%= render "shared/order_items" %>
-<% end %>
+  <% if items_count > 0  %>
+    <%= render "shared/order_items" %>
+  <% end %>
   <%= render 'shared/footer' %>
 </div>

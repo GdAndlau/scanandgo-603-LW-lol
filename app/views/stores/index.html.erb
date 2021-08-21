@@ -27,7 +27,12 @@
               <p class="store-distance-card"><%= %>25 m away</p>
           </div>
           <div class="col-3 checkin">
-            <a class="info-icon" href="/stores/<%=store.id%>"> <%= image_tag "checkin.png", alt: "check-in", width: 60 %></a>
+            <%# image_tag "checkin.png", alt: "check-in", width: 60 %>
+            <%= simple_form_for [store, @order] do |f| %>
+              <%# f.submit "", :type => :image, :src => "checkin.png", class:"info-icon" %>
+              <%# image_submit_tag("checkin.png") %>
+              <%= f.submit " ", :type => :image, :src => "image_1.png", class:"info-icon" %>
+            <% end %>
 
           </div>
         </div>
