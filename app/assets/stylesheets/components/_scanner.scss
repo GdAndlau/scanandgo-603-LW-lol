@@ -1,6 +1,15 @@
 .scanner-background{
   background-color: lightgrey;
-  padding: 190px 0px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scanner-background-additional  {
+  height: 30vh;
+  background-color: lightgrey;
+
 }
 
 .image-scanner{

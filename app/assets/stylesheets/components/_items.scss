@@ -1,0 +1,15 @@
+.items-container {
+ display: flex;
+ justify-content: space-between;
+ margin: 20px;
+ border-radius: 20px;
+ border: 2px solid lightgray;
+ padding: 10px;
+ // border-bottom: purple;
+ box-shadow: 5px 5px 5px gray;
+}
+
+.items i {
+   margin-right: 24px;
+   color: purple;
+}
