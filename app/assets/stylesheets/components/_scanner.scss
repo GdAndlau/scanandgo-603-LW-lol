@@ -1,6 +1,15 @@
 .scanner-background{
   background-color: lightgrey;
-  padding: 190px 0px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scanner-background-additional  {
+  height: 30vh;
+  background-color: lightgrey;
+
 }
 
 .image-scanner{
@@ -19,7 +28,7 @@
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
     .scanner-background{
-      padding: 220px 0px;
+      padding: 160px 0px;
     }
 }
 
@@ -31,6 +40,6 @@
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
     .scanner-background{
-      padding: 270px 0px;
+      padding: 160px 0px;
     }
 }

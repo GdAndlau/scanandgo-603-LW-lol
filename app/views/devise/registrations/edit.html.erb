@@ -1,5 +1,5 @@
-  <%= render 'shared/navbar' %>
-  <div class="background-image">
+<%= render 'shared/navbar' %>
+<div class="background-image">
     <div class="form-container">
       <h2 class="secondary-title">Update profile</h2>
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
@@ -24,7 +24,7 @@
                         autofocus: true,
                         placeholder: "Credit card details",
                         label: false, input_html: { class: "input-field" }  %>
-           <%= f.input :password,
+        <!--    <%= f.input :password,
                         required: true,
                         # hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                         placeholder: "Password",
@@ -32,7 +32,7 @@
             <%= f.input :password_confirmation,
                         required: true,
                         placeholder: "Confirm Password",
-                        label: false, input_html: { class: "input-field" }  %>
+                        label: false, input_html: { class: "input-field" }  %> -->
 
             <%= devise_error_messages! %>
          <%= f.button :submit, "Update", class: "btn-SignUp btn-block" %>
@@ -40,13 +40,7 @@
       <% end %>
   <div class="options">
     <p><%= button_to "Cancel my account", root_path, data: { confirm: "Are you sure?" }, method: :delete, class:"option-out" %></p>
-
     <p><%= button_to "Log out", destroy_user_session_path, method: :delete, class:"option-out"%></p>
   </div>
-
-
-
-
-    </div>
-  </div>
-  <%= render 'shared/footer' %>
+</div>
+    <%= render 'shared/footer' %>

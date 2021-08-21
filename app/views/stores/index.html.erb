@@ -27,15 +27,16 @@
               <p class="store-distance-card"><%= %>25 m away</p>
           </div>
           <div class="col-3 checkin">
-            <a class="info-icon" href="/stores/<%=store.id%>"> <%= image_tag "checkin.png", alt: "check-in", width: 60 %></a>
-
+            <%# image_tag "checkin.png", alt: "check-in", width: 60 %>
+            <%= simple_form_for [store, @order] do |f| %>
+              <%= f.submit " ", class:"info-icon test" %>
+            <% end %>
           </div>
         </div>
       </div>
 <!--       <div id="map" class="store-card-map"></div>
- -->      <% end%>
+ -->  <% end%>
 
     </div>
   </div>
-  <%= render 'shared/footer' %>
-
+<%= render 'shared/footer' %>

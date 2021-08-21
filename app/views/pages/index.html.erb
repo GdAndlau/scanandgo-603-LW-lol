@@ -4,20 +4,33 @@
 <% end %>
 <% product = product_ids.sample%>
 
+<% @order = Order.where(user: current_user)  %>
+<% @last_order = @order.last %>
+<% items_count = OrderItem.where(order: @last_order).count %>
+
+
 <div class="scanner-container">
   <%= render 'shared/navbar' %>
 
   <% flash.each do |type, msg| %>
-  <div id="conf-message" class="alert alert-info">
+    <div id="conf-message" class="alert alert-info">
     <%= msg %>
-  </div>
-<% end %>
+    </div>
+  <% end %>
 
   <div class="scanner-background">
     <%= link_to product_path(product) do %>
      <div class="image-scanner"></div>
     <% end %>
+
   </div>
 
+<% if items_count > 0  %>
+  <%= render "shared/order_items" %>
+<% else %>
+  <div class="scanner-background-additional">
+
+  </div>
+<% end %>
   <%= render 'shared/footer' %>
 </div>
