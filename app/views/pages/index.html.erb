@@ -22,9 +22,15 @@
     <%= link_to product_path(product) do %>
      <div class="image-scanner"></div>
     <% end %>
+
   </div>
 <% if items_count > 0  %>
   <%= render "shared/order_items" %>
+<% else %>
+  <div class="scanner-background-additional">
+
+  </div>
 <% end %>
+
   <%= render 'shared/footer' %>
 </div>
