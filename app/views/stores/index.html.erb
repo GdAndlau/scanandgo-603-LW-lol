@@ -29,11 +29,8 @@
           <div class="col-3 checkin">
             <%# image_tag "checkin.png", alt: "check-in", width: 60 %>
             <%= simple_form_for [store, @order] do |f| %>
-              <%# f.submit "", :type => :image, :src => "checkin.png", class:"info-icon" %>
-              <%# image_submit_tag("checkin.png") %>
-              <%= f.submit " ", :type => :image, :src => "image_1.png", class:"info-icon" %>
+              <%= f.submit " ", class:"info-icon test" %>
             <% end %>
-
           </div>
         </div>
       </div>
