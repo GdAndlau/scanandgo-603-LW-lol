@@ -13,9 +13,11 @@
           <%= @store.address %><br>
           <%= @store.opening_hours %>
         </div>
-        <div class="center-button-overlay  ">
-          <button class="btn-overlay btn-SignUp"><%= link_to "Check In", pages_path, class:"btn-SignUp"%></button>
 
+          <%= simple_form_for [@store, @order] do |f| %>
+            <%= f.submit "Check In", class: 'btn-SignUp' %>
+          <% end %>
+          <%#button class="btn-SignUp"><%= link_to "Check In", pages_path, class:"btn-SignUp"%>
         </div>
       </div>
     </div>
