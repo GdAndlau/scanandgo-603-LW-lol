@@ -69,22 +69,23 @@
 }
 // show of stores
 
-
-.store-show-container{}
 .store-grey-background{
   background-color: lightgrey;
   padding: 10px;
 }
 .store-show-card{
-  margin: 10px 20px;
+  
+  box-shadow: 0 4px 8px 4px rgba(0,0,0,0.4);
+  transition: 0.3s;
 }
 .store-show-image{
-  background-image: url("image3.png");
+  background-image: url("zara.jpg");
+  background-size: cover;
   height: 250px;
 }
 .store-show-info{
   background-color: white;
-  padding: 5px 0px 20px 0px;
+  padding: 5px 0px 40px 0px;
 }
 .store-show-title{
   margin-top: 10px;
@@ -92,12 +93,14 @@
 
 }
 .store-show-content{
-  margin-top: 10px;
-  font-size: 18px;
+  color: gray;
+  font-size: 14px;
+  margin: 10px 30px;
+  line-height: 25px;
 }
 
 .store-show-title, .store-show-content{
-  margin: 0px 10px;
+  margin: 10px 30px;
 }
 
 .store-show-btn{
