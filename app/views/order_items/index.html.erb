@@ -4,17 +4,8 @@
     <div class="secondary-title title-card-find title-text-color">
       <h2>Your <b style="color:purple">basket</b></h2>
     </div>
-    <div>
-        <% @all_order_items.each do |item| %>
-          <p><%= item.product.title %>
-          EUR <%= item.product.price %> <%= item.product.description %>  <i class="far fa-trash-alt"></i>
-                <%= cl_image_tag(item.product.image,
-    width: 60, height: 60, crop: :fill) %>
-  </div>
+    <%= render "shared/order_items" %>
 
-          </p>
-      <%end%>
-    </div>
     <h2>
       Total price:
       <h3>
