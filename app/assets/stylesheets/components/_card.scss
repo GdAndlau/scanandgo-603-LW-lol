@@ -72,19 +72,24 @@
 
 .store-show-container{}
 .store-grey-background{
-  background-color: lightgrey;
+  background-color: gray;
   padding: 10px;
 }
 .store-show-card{
-  margin: 10px 20px;
+  margin: 10px 10px;
 }
 .store-show-image{
   background-image: url("image3.png");
   height: 250px;
+  border-radius: 8px;
 }
 .store-show-info{
   background-color: white;
-  padding: 5px 0px 20px 0px;
+  padding: 5px 0px 10px 0px;
+  margin-top: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
 }
 .store-show-title{
   margin-top: 10px;
@@ -111,6 +116,21 @@
   align-items: center;
 }
 
+.btn-overlay {
+  width: 40vh;
+  height: 2.5em;
+  display: flex;
+  border-radius: 4px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.center-button-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
