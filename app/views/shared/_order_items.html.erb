@@ -1,0 +1,13 @@
+<% @order = Order.where(user: current_user) %>
+<% @last_order = @order.last %>
+<% @all_order_items = OrderItem.where(order: @last_order).order('created_at DESC') %>
+
+
+<div >
+        <% @all_order_items.each do |item| %>
+          <p><%= item.product.title %>
+          EUR <%= item.product.price %> <%= item.product.description %>  <i class="far fa-trash-alt"></i>
+                <%= cl_image_tag(item.product.image,
+    width: 60, height: 60, crop: :fill) %>
+    <% end %>
+  </div>

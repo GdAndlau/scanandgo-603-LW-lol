@@ -4,6 +4,11 @@
 <% end %>
 <% product = product_ids.sample%>
 
+<% @order = Order.where(user: current_user)  %>
+<% @last_order = @order.last %>
+<% items_count = OrderItem.where(order: @last_order).count %>
+
+
 <div class="scanner-container">
   <%= render 'shared/navbar' %>
 
@@ -18,6 +23,8 @@
      <div class="image-scanner"></div>
     <% end %>
   </div>
-
+<% if items_count > 0  %>
+  <%= render "shared/order_items" %>
+<% end %>
   <%= render 'shared/footer' %>
 </div>
