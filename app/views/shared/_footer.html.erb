@@ -1,3 +1,8 @@
+    <% @order = Order.where(user: current_user)  %>
+    <% @last_order = @order.last %>
+    <% items_count = OrderItem.where(order: @last_order).count %>
+
+
 <div class="footer-fill"></div>
 <div class="bottom-container">
   <div class="bottom-icones">
@@ -6,8 +11,10 @@
         <i class="fas fa-user-circle" ></i>
       </div>
     <% end %>
+      <%= link_to order_items_path do%>
       <div class="cart">
         <i class="fas fa-shopping-basket"></i>
+        <p><%= items_count %> </p>
       </div>
 
       <div class="icon popup" onclick="myFunction()">
@@ -20,6 +27,7 @@
           <div onclick="closepopup()">No, I want to stay in this shop</div>
 
         </span>
+
       </div>
     </div>
 </div>

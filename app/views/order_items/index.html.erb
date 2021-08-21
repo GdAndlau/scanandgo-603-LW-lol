@@ -1,0 +1,28 @@
+ <div class="order-index-container">
+
+  <%= render 'shared/navbar' %>
+    <div class="secondary-title title-card-find title-text-color">
+      <h2>Your <b style="color:purple">basket</b></h2>
+    </div>
+    <div>
+        <% @all_order_items.each do |item| %>
+          <p><%= item.product.title %>
+          EUR <%= item.product.price %> <%= item.product.description %>  <i class="far fa-trash-alt"></i>
+                <%= cl_image_tag(item.product.image,
+    width: 60, height: 60, crop: :fill) %>
+  </div>
+
+          </p>
+      <%end%>
+    </div>
+    <h2>
+      Total price:
+      <h3>
+      EUR <%= @total_price %>
+      </h3>
+    </h2>
+    <h2>Payment</h2>
+    <a href="/" class="btn-SignUp btn-block">Confirm payment</a>
+    <%= link_to "Continue Shopping", "pages"  %>
+<%= render 'shared/footer' %>
+</div>
