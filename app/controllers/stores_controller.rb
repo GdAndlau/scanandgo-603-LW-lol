@@ -1,6 +1,7 @@
 class StoresController < ApplicationController
 
   def index
+    @order = Order.new
     @stores = Store.all
     # the `geocoded` scope filters only flats with coordinates (latitude & longitude)
     @markers = @stores.geocoded.map do |flat|
