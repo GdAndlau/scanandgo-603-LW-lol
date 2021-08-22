@@ -62,9 +62,9 @@
   and (min-device-width: 414px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
-    .form-container{
-      padding-bottom: 70px;
-    }
+    // .form-container{
+    //   padding-bottom: 70px;
+    // }
     // .new-container{
     //   width: 414px;
     //   height: 736px;
@@ -106,7 +106,7 @@
   text-align: right;
   padding: 10px;
 
-  a{ 
+  a{
   color: white;
   }
 }
