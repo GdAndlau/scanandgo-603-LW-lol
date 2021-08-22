@@ -70,13 +70,13 @@
 // show of stores
 
 .store-grey-background{
-  background-color: lightgrey;
+  background-color: #ccc;
   padding: 10px;
 }
 .store-show-card{
-  
-  box-shadow: 0 4px 4px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgb(110, 110, 110);
 }
+
 .store-show-image{
   background-image: url("zara.jpg");
   background-size: cover;
@@ -89,17 +89,20 @@
 .store-show-title{
   margin-top: 10px;
   font-size: 35px;
+  color: $main-purple;
+  font-weight: 450;
 
 }
 .store-show-content{
   color: gray;
-  font-size: 14px;
-  margin: 10px 30px;
+  font-size: 15px;
   line-height: 25px;
+  font-weight: 500;
 }
 
 .store-show-title, .store-show-content{
-  margin: 10px 30px;
+  margin: 10px 20px;
+  letter-spacing: 0.6px;
 }
 
 .store-show-btn{

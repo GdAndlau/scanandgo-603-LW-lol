@@ -1,15 +1,15 @@
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
   .btn-SignUp{
-    background-color: #5C0C9A;
+    background-color: $main-purple;
     border-radius: 10px;
-    border-color: none;
+    border-color: transparent;
     color: white;
     text-decoration:none;
     font-weight: 400;
     font-size: 20px;
     padding: 6px 60px;
     width: 95%;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   }
 
 .btn-SignUp:hover{
