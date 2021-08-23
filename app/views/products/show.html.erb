@@ -11,7 +11,7 @@
     </div>
     <p> <%= @product.description %> </p>
   </div>
-  <div class="container">
+  <div class="container add-to-cart-btn">
     <%= simple_form_for [@product, @order_item] do |f| %>
       <%= f.submit "Add to cart", class: ' main-button' %>
     <% end %>
