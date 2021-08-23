@@ -1,15 +1,38 @@
 .items-container {
  display: flex;
  justify-content: space-between;
- margin: 20px;
- border-radius: 20px;
- border: 2px solid lightgray;
+ width: 95%;
+ margin: auto;
+ margin-top: 4px;
+ border-radius: 12px;
  padding: 10px;
  // border-bottom: purple;
- box-shadow: 5px 5px 5px gray;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 12px 0px;
+ background-color: #f4f4f4;
 }
 
 .items i {
    margin-right: 24px;
-   color: purple;
+   color: #5C0C9A;
+   font-size: 24px;
+   vertical-align: middle;
 }
+
+.items img {
+   border-radius: 12px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   margin: auto;
+}
+
+.title-price p {
+   margin: 0px;
+   font-weight: 500px;
+   font-family: "Montserrat", "sans-serif";
+}
+
+.title-price {
+   margin: auto 10px
+
+   
+}
+

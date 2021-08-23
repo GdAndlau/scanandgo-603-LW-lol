@@ -4,3 +4,51 @@
   background-color: coral;
   overflow: scroll;
 }
+
+.payment a {
+  margin: auto;
+  text-align: center;
+  font-weight: 500;
+  
+}
+
+.continue-shopping {
+  text-align: center;
+  padding: 8x 0px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+  
+.continue-shopping a {
+  color: #5C0C9A;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.total-price {
+  margin: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-price h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+ 
+}
+
+.total-price h3 {
+   font-size: 24px;
+   margin-bottom: 0px;
+}
+
+.title-text-color h2 {
+  font-size: 30px;
+  color: #5C0C9A;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+
