@@ -3,7 +3,7 @@
  justify-content: space-between;
  width: 95%;
  margin: auto;
- margin-top: 8px;
+ margin-bottom: 8px;
  border-radius: 8px;
  padding: 10px;
  // border-bottom: purple;
@@ -37,11 +37,16 @@
 }
 
 .scroll-items {
-   max-height: 326px;
+   max-height: 320px;
    overflow-y: scroll;
 }
 
 .scroll-items::-webkit-scrollbar {
    display: none;
    
+}
+
+.order-index-container {
+   background-color: white;
+   min-height: 812px;
 }
