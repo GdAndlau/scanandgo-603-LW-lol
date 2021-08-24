@@ -19,6 +19,15 @@
 
 }
 
+#btn-text-black {
+  color: #5C0C9A;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
 
 /* Portrait and Landscape */
 @media only screen
@@ -88,6 +97,20 @@
   color: white;
   font-size: 15px;
   font-weight: 700;
+  border-radius: 10px;
+}
+
+.main-button-lighter{
+  background-color: #D8BFD8;
+  border: 1px solid #D8BFD8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.253);
+  width: 100%;
+  padding: 8px 0;
+  color: #E6E6FA;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 

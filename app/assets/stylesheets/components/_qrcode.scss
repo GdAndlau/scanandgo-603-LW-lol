@@ -1,0 +1,37 @@
+.qr-text {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+        color: #7B7B7B;
+        font-family: "Montserrat";
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 13px;
+        color: #BBBBBB;
+    }
+}
+
+.qr-code-span-text {
+    color: #9842DB;
+    font-weight: 900;
+}
+
+.qr-button-container {
+    margin-top: 50px;
+}
+
+.image-qrcode{
+    background-image: url(https://res.cloudinary.com/dzlzazila/image/upload/v1629832054/qrcode_wxwoko.png);
+    background-size: contain;
+    height: 250px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

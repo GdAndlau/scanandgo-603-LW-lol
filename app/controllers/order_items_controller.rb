@@ -8,7 +8,7 @@ class OrderItemsController < ApplicationController
     @order_item.order = @order
 
     if @order_item.save!
-      render "pages/index"
+      redirect_to :controller => 'pages', :action => 'index'
     else
       render "products/show"
     end
@@ -28,6 +28,11 @@ class OrderItemsController < ApplicationController
     @all_order_items.each do |item|
       @total_price = @total_price + item.product.price
     end
+  end
 
+  def destroy
+    @item = OrderItem.find(params[:id])
+    @item.destroy
+    redirect_back(fallback_location: root_path)
   end
 end

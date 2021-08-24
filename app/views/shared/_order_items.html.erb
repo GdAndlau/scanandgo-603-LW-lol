@@ -10,11 +10,12 @@
         <p> EUR <%= item.product.price %></p>
       </div>
         <div class="items">
-          <i class="far fa-trash-alt"></i>
+          <%= link_to order_item_path(item), method: :delete do %>
+            <i class="far fa-trash-alt"></i>
+          <% end %>
           <%= cl_image_tag(item.product.image, width: 80, height: 80, crop: :fill) %>
         </div>
       </div>
-    
   <% end %>
 </div>
  
