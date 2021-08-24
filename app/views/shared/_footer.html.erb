@@ -27,7 +27,7 @@
           <b>Do you wanna check-out of this shop?</b><br><br>
           <div class="btn-container-popup">
             <button class="main-button"><div id="close-popup-trigger">No, I want to stay in this shop</div></button><br>
-            <button class="main-button-lighter"><%= link_to "Yes, I want to leave the shop", root_path%><br></button>
+            <button class="main-button-lighter"><%= link_to "Yes, I want to leave the shop", order_path(@last_order), method: :delete%><br></button>
           </div>
         </span>
       </div>
