@@ -17,6 +17,23 @@
   font-weight: bolder;
 }
 
+.background-image-edit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(218, 82, 254, 0.7),
+    rgba(112, 58, 242, 0.7)
+  ), url("image_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  // padding-bottom: 30px;
+  margin: 0;
+}
+
+
 .background-image{
   display: flex;
   flex-direction: column;
@@ -28,8 +45,8 @@
   ), url("image_1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  padding-bottom: 30px;
+  height: 100vh;
+  // padding-bottom: 30px;
   margin: 0;
 }
 

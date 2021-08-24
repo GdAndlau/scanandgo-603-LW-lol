@@ -17,17 +17,28 @@
       <h2>Check in now!</h2>
     </div> -->
 
-    <div class="store-card-container scroll-touch">
-      <% @stores.each do |store| %>
-      <div class="store-card-main">
-        <p class="store-title-card"><%= store.name %></p><a href="/stores/<%=store.id%>"><i class="fas fa-info-circle"></i></a>
-        <p class="store-address-card"><%= store.address %></p>
-        <p class="store-distance-card"><%= %>25 m away</p>
-      </div>
 
-      <div id="map" class="store-card-map"></div>
-      <% end%>
+
+    <div class=" store-card-container scroll-touch ">
+      <% @stores.each do |store| %>
+      <div class=" store-card-main">
+        <div class="row">
+          <div class="col-9">
+              <p class="store-title-card"><%= store.name.upcase %></p><a class="info-icon" href="/stores/<%=store.id%>"><i class="fas fa-info-circle"></i></a>
+              <p class="store-address-card"><%= store.address %></p>
+              <p class="store-distance-card"><%= %>25 m away</p>
+          </div>
+          <div class="col-3 checkin">
+            <%# image_tag "checkin.png", alt: "check-in", width: 60 %>
+            <%= simple_form_for [store, @order] do |f| %>
+              <%= f.submit " ", class:"info-icon test" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+<!--       <div id="map" class="store-card-map"></div>
+ -->  <% end%>
+
     </div>
   </div>
-  <%= render 'shared/footer' %>
-
+<%= render 'shared/footer' %>

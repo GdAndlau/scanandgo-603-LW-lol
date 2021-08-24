@@ -1,18 +1,36 @@
+    <% @order = Order.where(user: current_user)  %>
+    <% @last_order = @order.last %>
+    <% items_count = OrderItem.where(order: @last_order).count %>
+
 <div class="footer-fill"></div>
+
 <div class="bottom-container">
   <div class="bottom-icones">
-    <%= link_to edit_user_registration_path, resource: current_user, resource_name: :user do%>
+    <%= link_to edit_user_registration_path, resource: current_user, resource_name: :user do %>
       <div class="icon">
         <i class="fas fa-user-circle" ></i>
       </div>
     <% end %>
+
+    <%= link_to order_items_path do %>
       <div class="cart">
         <i class="fas fa-shopping-basket"></i>
       </div>
-      <div class="icon">
+      <p class="item-count"><%= items_count %> </p>
+    <% end %>
+
+      <div class="icon popup" id="open-popup-trigger">
         <i class="fas fa-house-user"></i>
+        <span class="popuptext" id="myPopup">
+          <i class="fas fa-exclamation-triangle"></i><br>
+          Your current session will be destroy and you will be logged out of the shop <br><br>
+          <b>Do you wanna check-out of this shop?</b><br><br>
+          <div class="btn-container-popup">
+            <button class="main-button"><div id="close-popup-trigger">No, I want to stay in this shop</div></button><br>
+            <button class="main-button-lighter"><%= link_to "Yes, I want to leave the shop", root_path%><br></button>
+          </div>
+        </span>
       </div>
     </div>
 </div>
-
 

@@ -1,10 +1,19 @@
 .scanner-background{
   background-color: lightgrey;
-  padding: 190px 0px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scanner-background-additional  {
+  height: 30vh;
+  background-color: lightgrey;
+
 }
 
 .image-scanner{
-  background-image: url("scanner.png");
+  background-image: url("https://res.cloudinary.com/dzlzazila/image/upload/v1629820832/scanner_y01ixz.jpg");
   height: 155px;
   width: 220px;
   margin: 0 auto;
@@ -19,7 +28,7 @@
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
     .scanner-background{
-      padding: 220px 0px;
+      padding: 160px 0px;
     }
 }
 
@@ -31,6 +40,6 @@
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
     .scanner-background{
-      padding: 270px 0px;
+      padding: 160px 0px;
     }
 }
