@@ -11,7 +11,14 @@
         </p>
       </div>
         <div class="items">
-          <i class="far fa-trash-alt"></i>
+
+        <%= link_to order_item_path(item), method: :delete do %>
+         <i class="far fa-trash-alt"></i>
+        <% end %>
+
+
+
+
           <%= cl_image_tag(item.product.image, width: 60, height: 60, crop: :fill) %>
         </div>
       </div>
