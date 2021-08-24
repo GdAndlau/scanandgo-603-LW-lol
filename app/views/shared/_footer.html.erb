@@ -12,24 +12,24 @@
       </div>
     <% end %>
 
-      <%= link_to order_items_path do %>
+    <%= link_to order_items_path do %>
       <div class="cart">
         <i class="fas fa-shopping-basket"></i>
       </div>
       <p class="item-count"><%= items_count %> </p>
-      <% end %>
+    <% end %>
 
       <div class="icon popup" id="open-popup-trigger">
-        <i class="fas fa-house-user"></i><span class="popuptext" id="myPopup">
-
-        Your current session will be destroy and you will be logged out of the shop <br><br>
-        Do you wanna check-out of this shop? <br><br>
-
-          <%= link_to "Yes, I want to leave the shop", root_path%><br>
-          <div id="close-popup-trigger">No, I want to stay in this shop</div>
-
+        <i class="fas fa-house-user"></i>
+        <span class="popuptext" id="myPopup">
+          <i class="fas fa-exclamation-triangle"></i><br>
+          Your current session will be destroy and you will be logged out of the shop <br><br>
+          <b>Do you wanna check-out of this shop?</b><br><br>
+          <div class="btn-container-popup">
+            <button class="main-button"><div id="close-popup-trigger">No, I want to stay in this shop</div></button><br>
+            <button class="main-button-lighter"><%= link_to "Yes, I want to leave the shop", root_path%><br></button>
+          </div>
         </span>
-
       </div>
     </div>
 </div>
