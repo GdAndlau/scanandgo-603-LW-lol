@@ -1,7 +1,7 @@
 <%= render 'shared/navbar' %>
 <div class="background-image-edit">
     <div class="form-container">
-      <h2 class="secondary-title">Update profile</h2>
+      <h2 class="secondary-title title-card-find title-text-color" ><b>Update <span style="color:purple">profile</b></span></h2>
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
             <%= f.error_notification %>
             <%= f.input :first_name,
