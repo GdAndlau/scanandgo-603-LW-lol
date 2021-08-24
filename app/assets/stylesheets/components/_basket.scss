@@ -4,3 +4,64 @@
   background-color: coral;
   overflow: scroll;
 }
+
+.payment a {
+  margin: auto;
+  text-align: center;
+  font-weight: 500;
+  
+}
+
+.btn-pay {
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 6px 6px;
+}
+
+.continue-shopping {
+  text-align: center;
+  padding: 8x 0px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+  
+.continue-shopping a {
+  color: #5C0C9A;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.total-price {
+  margin: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-price h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+ 
+}
+
+.total-price h3 {
+   font-size: 24px;
+   margin-bottom: 0px;
+}
+
+.title-text-color h2 {
+  font-size: 26px;
+  color: #5C0C9A;
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-family: "Montserrat", "sans-serif";
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+

@@ -1,15 +1,52 @@
 .items-container {
  display: flex;
  justify-content: space-between;
- margin: 20px;
- border-radius: 20px;
- border: 2px solid lightgray;
+ width: 95%;
+ margin: auto;
+ margin-bottom: 8px;
+ border-radius: 8px;
  padding: 10px;
  // border-bottom: purple;
- box-shadow: 5px 5px 5px gray;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 12px 0px;
+ background-color: white;
 }
 
 .items i {
-   margin-right: 24px;
-   color: purple;
+   margin-right: 28px;
+   color: #5C0C9A;
+   opacity: 0.7;
+   font-size: 24px;
+   vertical-align: middle;
+}
+
+.items img {
+   border-radius: 8px;
+   box-shadow: rgba(100, 100, 111, 0.4) 0px 2px 8px 0px;
+   margin: auto;
+}
+
+.title-price p {
+   margin: 0px;
+   font-weight: 500px;
+   font-family: "Montserrat", "sans-serif";
+}
+
+.title-price {
+   margin: auto 10px
+   
+}
+
+.scroll-items {
+   max-height: 320px;
+   overflow-y: scroll;
+}
+
+.scroll-items::-webkit-scrollbar {
+   display: none;
+   
+}
+
+.order-index-container {
+   background-color: white;
+   min-height: 812px;
 }

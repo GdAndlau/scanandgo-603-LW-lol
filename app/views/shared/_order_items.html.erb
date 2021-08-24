@@ -2,25 +2,20 @@
 <% @last_order = @order.last %>
 <% @all_order_items = OrderItem.where(order: @last_order).order('created_at DESC') %>
 
-
+<div class="scroll-items">
   <% @all_order_items.each do |item| %>
     <div class="items-container">
-      <div >
-        <p><%= item.product.title %></p>
-        <p> EUR <%= item.product.price %>
-        </p>
+      <div class="title-price">
+        <p><strong><%= item.product.title %></strong></p>
+        <p> EUR <%= item.product.price %></p>
       </div>
         <div class="items">
-
-        <%= link_to order_item_path(item), method: :delete do %>
-         <i class="far fa-trash-alt"></i>
-        <% end %>
-
-
-
-
-          <%= cl_image_tag(item.product.image, width: 60, height: 60, crop: :fill) %>
+          <%= link_to order_item_path(item), method: :delete do %>
+            <i class="far fa-trash-alt"></i>
+          <% end %>
+          <%= cl_image_tag(item.product.image, width: 80, height: 80, crop: :fill) %>
         </div>
       </div>
-    </div>
   <% end %>
+</div>
+ 
