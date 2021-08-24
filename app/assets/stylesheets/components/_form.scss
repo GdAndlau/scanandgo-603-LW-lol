@@ -63,45 +63,11 @@
   and (min-device-width: 414px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
-    // .form-container{
-    //   padding-bottom: 70px;
-    // }
-    // .new-container{
-    //   width: 414px;
-    //   height: 736px;
-    // }
-}
 
-
-/* ----------- iPhone X ----------- */
-/* Portrait and Landscape */
-/* @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
     .form-container{
-      padding-bottom: 124px;
+      padding-bottom: 70px;
     }
-    // .new-container{
-    //   width: 375px;
-    //   height: 812px;
-    // }
 }
- */
-// @media only screen
-//   and (min-device-width: 375px)
-//   and (max-device-width: 667px)
-//   and (-webkit-min-device-pixel-ratio: 3) {
-//     .form-container{
-//       padding-bottom: 124px;
-//     }
-//     .new-container{
-//       width: 375px;
-//       height: 736px;
-//     }
-// }
-
-
 
 .go-back{
   text-align: right;
