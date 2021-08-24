@@ -3,12 +3,12 @@
  justify-content: space-between;
  width: 95%;
  margin: auto;
- margin-top: 4px;
+ margin-top: 8px;
  border-radius: 8px;
  padding: 10px;
  // border-bottom: purple;
  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 12px 0px;
- background-color: white
+ background-color: white;
 }
 
 .items i {
@@ -36,3 +36,12 @@
    
 }
 
+.scroll-items {
+   max-height: 326px;
+   overflow-y: scroll;
+}
+
+.scroll-items::-webkit-scrollbar {
+   display: none;
+   
+}
