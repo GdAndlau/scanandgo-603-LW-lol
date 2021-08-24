@@ -3,7 +3,6 @@
   <div class="store-grey-background">
     <div class="store-show-card">
       <div class="store-show-image">
-
       </div>
       <div class="store-show-info">
         <div class="store-show-title">
@@ -14,10 +13,9 @@
           <%= @store.opening_hours %>
         </div>
         <div class="store-show-btn">
-
-          <%= simple_form_for [@store, @order] do |f| %>
-            <%= f.submit "Check In", class: 'btn-SignUp' %>
-          <% end %>
+            <%= simple_form_for [@store, @order] do |f| %>
+              <%= f.submit "Check In", class: 'btn-SignUp' %>
+            <% end %>
           <%#button class="btn-SignUp"><%= link_to "Check In", pages_path, class:"btn-SignUp"%>
         </div>
       </div>
@@ -25,3 +23,4 @@
   </div>
   <%= render 'shared/footer' %>
 </div>
+
