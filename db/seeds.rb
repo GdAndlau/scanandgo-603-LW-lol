@@ -89,7 +89,7 @@ Product.create!(
   title: "Shorts",
   price: 20,
   store: Store.where(name: "Zara").first,
-  image: "wscyyvfhdhmdl9kqapjp",
+  image: "shopping_tnvn9c",
   )
 Product.create!(
   title: "Jeans",
@@ -101,13 +101,25 @@ Product.create!(
 
 Product.create!(
   title: "Watch",
-  description: "Fancy watch",
-  price: 45,
+  description: "Amelia watch",
+  price: 100,
   store: Store.where(name: "Douglas").first,
-  image: "jfvd1mnuldsswypivqyg"
+  image: "amelia_holzkern_holzuhr_woodwatch_fa_200320q_4_drv3wv"
   )
 puts "Products created"
 puts "------------"
+
+
+Product.create!(
+  title: "Watch",
+  description: "Fancy watch",
+  price: 45,
+  store: Store.where(name: "Douglas").first,
+  image: "HamburgQ_VintageMokka_Wristshot_900x_lwms6g"
+  )
+puts "Products created"
+puts "------------"
+
 
 puts "4. Creating 3 orders"
 Order.create!(
