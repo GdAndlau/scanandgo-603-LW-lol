@@ -16,7 +16,6 @@ class OrdersController < ApplicationController
     end
   end
 
-
   def show
     @orders = Order.where(user: current_user)
     @last_order = @orders.last
