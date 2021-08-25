@@ -23,7 +23,7 @@
       <% @stores.each do |store| %>
       <div class=" store-card-main">
         <div class="row">
-          <div class="col-9">
+          <div class="col-9 store-card-text">
               <p class="store-title-card"><%= store.name.upcase %></p><a class="info-icon" href="/stores/<%=store.id%>"><i class="fas fa-info-circle"></i></a>
               <p class="store-address-card"><%= store.address %></p>
               <p class="store-distance-card"><%= %>25 m away</p>
