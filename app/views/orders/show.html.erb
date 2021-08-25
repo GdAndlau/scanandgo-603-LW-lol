@@ -12,7 +12,7 @@
       <div class="row"><p>Summary</p><p><%= @total_price + vat %>EUR</p></div>
     </div>
     <div class="go-to-qr-btn">
-      <a href="/" class="btn-SignUp btn-block">Checkout and get QR code</a>
+      <%= link_to 'Checkout and get QR code', qrcode_path, class:"btn-SignUp btn-block" %>
     </div>
   <%= render 'shared/footer' %>
 </div>
