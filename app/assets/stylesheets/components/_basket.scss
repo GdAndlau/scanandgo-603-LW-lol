@@ -25,7 +25,7 @@
 }
   
 .continue-shopping a {
-  color: #5C0C9A;
+  color: $main-color;
   font-size: 14px;
   font-weight: 600;
   font-family: "Montserrat", "sans-serif";
@@ -52,7 +52,7 @@
 
 .title-text-color h2 {
   font-size: 26px;
-  color: #5C0C9A;
+  color: $main-color;
   font-weight: 600;
   margin-bottom: 16px;
   font-family: "Montserrat", "sans-serif";
@@ -63,5 +63,3 @@ div.sticky {
   position: sticky;
   bottom: 0;
 }
-
-

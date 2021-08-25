@@ -22,7 +22,13 @@
     font-size: 50px;
     margin-bottom: 10px;
   }
-}
+
+  .fa-cash-register{
+    color: rgba(218, 82, 254, 0.7);
+    font-size: 70px;
+    margin: 10px 0px;
+    }
+  }
 
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
@@ -53,7 +59,7 @@
 
 .fa-info-circle{
  font-size: 25px;
- color: #5C0C9A;
+ color: $main-color;
 }
 
 .icon i {
@@ -70,13 +76,19 @@
   font-size: 20px;
   line-height: 28px;
   color: white;
-  background-color: #5C0C9A;
+  background-color: $main-color;
   border-radius: 50%;
   text-align: center;
   min-width:30px;
   font-family:Arial, Helvetica, sans-serif;
   font-weight: 500;
   margin: 8px 0px 0px 0px;
+}
+
+.fa-map-marker-alt {
+  padding: 0px;
+  margin: 0px;
+  color: $main-color;
 }
 
 

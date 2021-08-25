@@ -24,13 +24,13 @@
 
 .store-card-main{
   // border-style: solid;
-  border-radius: 25px;
+  border-radius: 8px;
   // border-color: #9842DB;
-  margin-bottom: 24px;
-  margin-right: 24px;
-  margin-left: 24px;
-  background-color: #F6E8FF;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 90%;
+  margin: 8px auto;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 12px 0px;
+  padding: 0px 24px;
 }
 
 .store-title-card{
@@ -38,15 +38,14 @@
   font-size: 16px;
   margin-right: 0px;
   padding-right: 0px;
-  margin-left: 12px;
-  color: gray;
+  color: $main-color;
   font-weight: 700;
   margin-bottom: 24px;
 
 }
 
 .store-distance-card{
-  margin: 0px 0px 10px 10px;
+  margin: 0px 0px 10px 0px;
   font-size: 16px;
 }
 
@@ -54,7 +53,7 @@
   font-size: 16px;
   vertical-align: super;
   padding-left: 4px;
-  color: gray;
+  color: $main-color;
 }
 
 .store-distance-card {
@@ -63,7 +62,6 @@
 
 .store-address-card, .store-distance-card {
   font-size: 12px;
-  margin-left: 12px;
   margin-bottom: 0;
   margin-top: 4px;
   color: gray;
