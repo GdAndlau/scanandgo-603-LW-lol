@@ -9,8 +9,8 @@ class OrdersController < ApplicationController
     @order.user_id = @user.id
 
     if @order.save!
-      render "pages/index"
       flash.alert = "You are now logged in to #{@store.name}"
+      redirect_to pages_path
     else
       flash.alert = "You couldn't login this store"
     end
