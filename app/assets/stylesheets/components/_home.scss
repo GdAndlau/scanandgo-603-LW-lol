@@ -13,7 +13,7 @@
 }
 
 .title-color {
-  color: #5b0c9a;
+  color: $main-color;
   font-weight: bolder;
 }
 
@@ -60,7 +60,7 @@
 
 .option-left {
     text-decoration: none;
-    color: #5C0C9A;
+    color: $main-color;
     font-weight: 600;
     text-decoration: underline;
 
@@ -68,12 +68,12 @@
 
 .option-right {
     text-decoration: none;
-    color: #5C0C9A;
+    color: $main-color;
 }
 
 .option-out {
     text-decoration: none;
-    color: #5C0C9A;
+    color: $main-color;
     background-color: transparent;
     border: none;
 }

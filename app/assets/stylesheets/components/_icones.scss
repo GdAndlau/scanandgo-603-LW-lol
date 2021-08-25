@@ -53,7 +53,7 @@
 
 .fa-info-circle{
  font-size: 25px;
- color: #5C0C9A;
+ color: $main-color;
 }
 
 .icon i {
@@ -70,7 +70,7 @@
   font-size: 20px;
   line-height: 28px;
   color: white;
-  background-color: #5C0C9A;
+  background-color: $main-color;
   border-radius: 50%;
   text-align: center;
   min-width:30px;
