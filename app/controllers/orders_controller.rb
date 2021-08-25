@@ -24,6 +24,7 @@ class OrdersController < ApplicationController
     @last_order.order_items.each do |item|
       @total_price = @total_price + item.product.price
     end
+  end
 
   def destroy
     @user = current_user
