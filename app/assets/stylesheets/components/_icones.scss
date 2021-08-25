@@ -30,6 +30,7 @@
     }
   }
 
+
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 /* Portrait and Landscape */
 @media only screen
@@ -58,5 +59,30 @@
 
 .fa-info-circle{
  font-size: 25px;
- color: #5C0C9A;
+ color: $main-color;
 }
+
+.icon i {
+  font-size: 55px;
+  color: white;
+  padding-top: 15px;
+}
+
+.fa-stack[data-count]:after{
+  position:absolute;
+  right:0%;
+  top:0%;
+  content: attr(data-count);
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+  background-color: $main-color;
+  border-radius: 50%;
+  text-align: center;
+  min-width:30px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin: 8px 0px 0px 0px;
+}
+
+

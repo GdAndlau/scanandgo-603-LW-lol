@@ -8,28 +8,40 @@
   <div class="bottom-icones">
     <%= link_to edit_user_registration_path, resource: current_user, resource_name: :user do %>
       <div class="icon">
-        <i class="fas fa-user-circle" ></i>
+        <i class="fa fa-user-circle"></i>
       </div>
     <% end %>
 
     <%= link_to order_items_path do %>
       <div class="cart">
-        <i class="fas fa-shopping-basket"></i>
+        <span class="fa-stack fa-2x has-badge" data-count=<%= items_count %>>
+          <div class="icon">
+            <i style="" class="fa fa-shopping-basket fa-stack-2x"></i>
+          </div>
+        </span>
       </div>
-      <p class="item-count"><%= items_count %> </p>
     <% end %>
 
       <div class="icon popup" id="open-popup-trigger">
-        <i class="fas fa-house-user"></i>
+        <% if @last_order %>
+        <i class="fas fa-home"></i>
         <span class="popuptext" id="myPopup">
           <i class="fas fa-exclamation-triangle"></i><br>
           Your current session will be destroy and you will be logged out of the shop <br><br>
           <b>Do you wanna check-out of this shop?</b><br><br>
           <div class="btn-container-popup">
             <button class="main-button"><div id="close-popup-trigger">No, I want to stay in this shop</div></button><br>
-            <button class="main-button-lighter"><%= link_to "Yes, I want to leave the shop", root_path%><br></button>
+            <button class="main-button-lighter">
+              <%= link_to "Yes, I want to leave the shop", order_path(@last_order), method: :delete%>
+            </button>
+            <br>
           </div>
         </span>
+      <% else %>
+        <%= link_to root_path do%>
+          <i class="fas fa-home"></i>
+        <% end %>
+      <% end %>
       </div>
     </div>
 </div>
