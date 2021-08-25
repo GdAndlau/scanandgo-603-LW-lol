@@ -30,8 +30,14 @@
   margin: 8px auto;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 12px 0px;
-  padding: 0px 24px;
+  padding: 0px 0px;
 }
+
+.store-text {
+  padding: 0px;
+}
+
+
 
 .store-title-card{
   display:inline;
@@ -120,6 +126,8 @@
 .checkin {
   display: flex;
   align-items: center;
+  justify-items: right;
+  justify-content: right;
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
