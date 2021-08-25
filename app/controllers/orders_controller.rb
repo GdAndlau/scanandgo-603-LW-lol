@@ -18,4 +18,12 @@ class OrdersController < ApplicationController
 
   end
 
+  def show
+    @orders = Order.where(user: current_user)
+    @last_order = @orders.last
+    @total_price = 0
+    @last_order.order_items.each do |item|
+      @total_price = @total_price + item.product.price
+    end
+  end
 end

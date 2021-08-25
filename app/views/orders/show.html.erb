@@ -1,0 +1,23 @@
+<div class="oder-confirmation">
+  <%= render 'shared/navbar' %>
+  <div class="final-pic">
+    <i class="fas fa-cash-register"></i>
+  </div>
+  <h1 class="order-completed">Order completed</h1>
+  <h3 class="order-number">Order number is #345 654 987</h3>
+    <div class="order-details">
+      <div class="row"><p><em>Ordered Items</em></p><b><p id ="plus-sign">+</b></p></div>
+      <div class="row"><p>Order</p><p><%= @total_price %>EUR</p></div>
+      <div class="row"><p>VAT</p><p><%= vat = @total_price * 0.2 %>EUR</p></div>
+      <div class="row"><p>Summary</p><p><%= @total_price + vat %>EUR</p></div>
+    </div>
+    <div class="go-to-qr-btn">
+      <a href="/" class="btn-SignUp btn-block">Checkout and get QR code</a>
+    </div>
+  <%= render 'shared/footer' %>
+</div>
+
+
+
+
+
