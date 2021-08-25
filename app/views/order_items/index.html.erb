@@ -1,3 +1,5 @@
+<% @order =  %>
+
 <div class="order-index-container">
 
   <%= render 'shared/navbar' %>
@@ -16,14 +18,14 @@
           </h3>
         </h2>
       </div>
-        
-      <a href="/" class="btn-SignUp btn-block btn-pay">Confirm payment</a>
+
+      <%= link_to 'Confirm payment', order_path(@last_order), class:"btn-SignUp btn-block btn-pay" %>
       <div class="continue-shopping">
-        <%= link_to "Continue Shopping", "pages"  %>
+        <%= link_to "Continue Shopping", pages_path  %>
       </div>
     </div>
-      
+
   <%= render 'shared/footer' %>
-  
+
 </div>
 

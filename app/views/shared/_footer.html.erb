@@ -1,6 +1,10 @@
     <% @order = Order.where(user: current_user)  %>
     <% @last_order = @order.last %>
-    <% items_count = OrderItem.where(order: @last_order).count %>
+    <% if !@last_order.completed then  %>
+      <% items_count = OrderItem.where(order: @last_order).count %>
+    <% else %>
+      <% items_count = 0 %>
+    <% end %>
 
 <div class="footer-fill"></div>
 
@@ -23,7 +27,7 @@
     <% end %>
 
       <div class="icon popup" id="open-popup-trigger">
-        <% if @last_order %>
+        <% if @last_order && !@last_order.completed %>
         <i class="fas fa-home"></i>
         <span class="popuptext" id="myPopup">
           <i class="fas fa-exclamation-triangle"></i><br>
