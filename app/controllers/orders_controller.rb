@@ -9,13 +9,12 @@ class OrdersController < ApplicationController
     @order.user_id = @user.id
 
     if @order.save!
-      render "pages/index"
+      redirect_to pages_path
       flash.alert = "You are now logged in to #{@store.name}"
     else
       flash.alert = "You couldn't login this store"
     end
   end
-
 
   def show
     @orders = Order.where(user: current_user)
