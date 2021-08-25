@@ -20,9 +20,12 @@ class OrdersController < ApplicationController
   def show
     @orders = Order.where(user: current_user)
     @last_order = @orders.last
+    @last_order.completed = 'true'
+    @last_order.save
     @total_price = 0
     @last_order.order_items.each do |item|
-      @total_price = @total_price + item.product.price
+    @total_price = @total_price + item.product.price
+
     end
   end
 
