@@ -26,36 +26,7 @@
 }
 
 .cart {
-  background: white;
-  border-radius: 50%;
-  height: 90%;
-  margin: 8px;
-  display: flex;
-  position: relative;
-}
-
-.item-count {
-  background: #5C0C9A;
-  color: white;
-  height: 15px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  font-weight: 900;
-  position: absolute;
-
-  font-size: 0.9em
-}
-
-.cart i {
-  color: #DA52FE;
-  padding: 8px;
-  font-size: 3em;
-}
-
-.icon i {
-  font-size: 2.5em;
+  padding-top: 0px;
 }
 
 /* Portrait and Landscape */

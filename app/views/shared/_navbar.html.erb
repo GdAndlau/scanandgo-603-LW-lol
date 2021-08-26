@@ -1,8 +1,14 @@
 <div class="nav-container">
   <div class="nav-content">
+<% if request.env['HTTP_REFERER'].present? && request.env['HTTP_REFERER'] %>
     <%= link_to :back, class: "back-arrow" do%>
       <i class="fas fa-arrow-left stick-left"></i>
     <% end %>
-    <%= image_tag "logo2.PNG", alt: "ScanAndGo", width: 150 %>
+<% else %>
+  <%= link_to root_path, class: "back-arrow" do%>
+      <i class="fas fa-arrow-left stick-left"></i>
+    <% end %>
+<% end %>
+    <%= cl_image_tag "logo2_sq9rsw", alt: "ScanAndGo", width: 150 %>
   </div>
 </div>

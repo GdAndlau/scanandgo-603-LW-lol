@@ -1,0 +1,12 @@
+<%= render 'shared/navbar' %>
+<div class="qr-main-container">
+    <div class="qr-text">
+        <h2>Your <span class="qr-code-span-text">QR Code</span></h2>
+        <p>Show the code when leaving the store</p>
+    </div>
+    <div class="image-qrcode"></div>
+    <div class="go-to-qr-btn">
+      <%= link_to 'I am done, thanks!', root_path, class:"btn-SignUp btn-block" %>
+    </div>
+</div>
+<%= render 'shared/footer' %>

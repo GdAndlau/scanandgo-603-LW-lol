@@ -3,12 +3,15 @@ class PagesController < ApplicationController
 
   def home
     if current_user
-    redirect_to stores_path
+     redirect_to stores_path
     else
     end
   end
 
   def index
 
+  end
+  
+  def qrcode
   end
 end
