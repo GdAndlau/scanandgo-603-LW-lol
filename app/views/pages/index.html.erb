@@ -11,26 +11,24 @@
 
 <div class="scanner-container">
   <%= render 'shared/navbar' %>
-
-  <% flash.each do |type, msg| %>
-    <div id="conf-message" class="alert alert-info">
-    <%= msg %>
-    </div>
-  <% end %>
-
+  <div class="flash">
+    <% flash.each do |notice, msg| %>
+      <div id="conf-message" class="alert alert-info">
+        <%= msg %>
+      </div>
+    <% end %>
+  </div>
   <div class="scanner-background">
     <%= link_to product_path(product) do %>
      <div class="image-scanner"></div>
     <% end %>
-
   </div>
 
-<% if items_count > 0  %>
-  <%= render "shared/order_items" %>
-<% else %>
-  <div class="scanner-background-additional">
+  <% if items_count > 0  %>
+    <%= render "shared/order_items" %>
+  <% else %>
+    <div class="scanner-background-additional"></div>
+  <% end %>
 
-  </div>
-<% end %>
   <%= render 'shared/footer' %>
 </div>

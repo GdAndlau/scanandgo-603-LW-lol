@@ -7,7 +7,7 @@
     </div> %>
 
     <div class="secondary-title title-card-find title-text-color">
-      <h2><b style="color:purple">Shops</b> near you</h2>
+      <h2><b>Shops</b> near you</h2>
     </div>
 
 <!--     <div id="geocoder"></div>
@@ -23,7 +23,7 @@
       <% @stores.each do |store| %>
       <div class=" store-card-main">
         <div class="row">
-          <div class="col-9">
+          <div class="col-9 store-card-text">
               <p class="store-title-card"><%= store.name.upcase %></p><a class="info-icon" href="/stores/<%=store.id%>"><i class="fas fa-info-circle"></i></a>
               <p class="store-address-card"><%= store.address %></p>
               <p class="store-distance-card"><%= %>25 m away</p>

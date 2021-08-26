@@ -1,6 +1,6 @@
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
   .btn-SignUp{
-    background-color: #5C0C9A;
+    background-color: $main-color;
     border-radius: 10px;
     border-color: none;
     color: white;
@@ -15,11 +15,12 @@
 .btn-SignUp:hover{
     color: white;
     font-weight: 700;
+    text-decoration: none;
 
 }
 
 #btn-text-black {
-  color: #5C0C9A;
+  color: $main-color;
   display: flex;
   justify-content: center;
   margin-top: 8px;
@@ -88,8 +89,8 @@
 }
 
 .main-button {
-  background-color: #5C0C9A;
-  border: 1px solid #5C0C9A;
+  background-color: $main-color;
+  border: 1px solid $main-color;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.253);
   width: 100%;
   padding: 8px 0;
