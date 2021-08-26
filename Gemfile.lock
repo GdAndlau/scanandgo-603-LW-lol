@@ -168,11 +168,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-<<<<<<< HEAD
     rails-html-sanitizer (1.4.2)
-=======
-    rails-html-sanitizer (1.4.1)
->>>>>>> d2047c78c04c870424756768730e9b37e1f4cea1
       loofah (~> 2.3)
     railties (6.0.4.1)
       actionpack (= 6.0.4.1)
