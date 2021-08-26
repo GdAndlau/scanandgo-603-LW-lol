@@ -1,6 +1,6 @@
     <% @order = Order.where(user: current_user)  %>
-    <% @last_order = @order.last %>
-    <% if !@last_order.completed then  %>
+    <% @last_order = Order.new %>
+    <% if !@last_order.completed? then  %>
       <% items_count = OrderItem.where(order: @last_order).count %>
     <% else %>
       <% items_count = 0 %>
@@ -27,7 +27,7 @@
     <% end %>
 
       <div class="icon popup" id="open-popup-trigger">
-        <% if @last_order && !@last_order.completed %>
+        <% if @last_order && !@last_order.completed? %>
         <i class="fas fa-home"></i>
         <span class="popuptext" id="myPopup">
           <i class="fas fa-exclamation-triangle"></i><br>
@@ -36,7 +36,7 @@
           <div class="btn-container-popup">
             <button class="main-button"><div id="close-popup-trigger">No, I want to stay in this shop</div></button><br>
             <button class="main-button-lighter">
-              <%= link_to "Yes, I want to leave the shop", order_path(@last_order), method: :delete%>
+              <%= link_to "Yes, I want to leave the shop", root_path %>
             </button>
             <br>
           </div>

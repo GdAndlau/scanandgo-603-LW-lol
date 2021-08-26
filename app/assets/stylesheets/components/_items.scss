@@ -38,6 +38,7 @@
 .scroll-items {
    max-height: 320px;
    overflow-y: scroll;
+   margin-bottom: 100px;
 }
 
 .scroll-items::-webkit-scrollbar {
