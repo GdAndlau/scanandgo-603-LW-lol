@@ -10,7 +10,7 @@ class OrdersController < ApplicationController
 
     if @order.save!
       flash.alert = "You are now logged in to #{@store.name}"
-      redirect_to pages_path
+      redirect_to new_qr_code_path
     else
       flash.alert = "You couldn't login this store"
     end

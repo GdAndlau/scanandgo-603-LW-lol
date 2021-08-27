@@ -8,7 +8,7 @@ class OrderItemsController < ApplicationController
     @order_item.order = @order
 
     if @order_item.save!
-      redirect_to :controller => 'pages', :action => 'index'
+      redirect_to new_qr_code_path
     else
       render "products/show"
     end
