@@ -1,0 +1,39 @@
+<% product_ids = [] %>
+<% Product.all.each do |product| %>
+  <% product_ids.push(product.id) %>
+<% end %>
+<% product = product_ids.sample%>
+
+<% @order = Order.where(user: current_user)  %>
+<% @last_order = @order.last %>
+<% items_count = OrderItem.where(order: @last_order).count %>
+
+
+<div class="scanner-container">
+  <%= render 'shared/navbar' %>
+
+  <div class="flash">
+    <% flash.each do |notice, msg| %>
+      <div id="conf-message" class="alert alert-info">
+        <%= msg %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="scanner-background">
+    <%= link_to product_path(product) do %>
+     <div>
+      <video id="video" width="300" height="300"></video>
+    </div>
+    <% end %>
+  </div>
+
+  <% if items_count > 0  %>
+    <%= render "shared/order_items" %>
+  <% else %>
+    <div class="scanner-background-additional"></div>
+  <% end %>
+
+  <%= render 'shared/footer' %>
+</div>
+<%= javascript_pack_tag("rails-qr-code-reader") %>
