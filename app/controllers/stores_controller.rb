@@ -5,12 +5,16 @@ class StoresController < ApplicationController
     # conditional - if coordinates exist, save it in users session (session["longtitude"] = ) else just all stores
     # in post method render json: {response}
     if !session[:langtitude].nil? && !session[:longtitude].nil?
-      @stores_near_you = Store.near([session[:langtitude], session[:longtitude]], 5)
-      @stores_near_you.each do |store|
-        store.distance = store.distance_to(
+      @store_init = Store.all
+      @store_init.each do |store|
+        store_dist = (store.distance_to(
           [session[:langtitude], session[:longtitude]]
-          )
+          ))
+        store.Distance = !store_dist.nil? ?store_dist.round(3) : 0
+        store.save
       end
+      @stores = Store.all.order(distance: :asc)
+      @stores_near_you = @stores.near([session[:langtitude], session[:longtitude]], 30)
     else
       @stores_near_you = Store.all
     end

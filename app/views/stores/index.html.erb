@@ -26,16 +26,12 @@
 
     <div class=" store-card-container scroll-touch ">
       <% @stores.each do |store| %>
-          <% @distance = store.distance_to(
-              [session[:langtitude], session[:longtitude]]
-          ) %>
-
       <div class=" store-card-main">
         <div class="row">
           <div class="col-9 store-card-text">
              <p class="store-title-card"><%= store.name.upcase %></p><a class="info-icon" href="/stores/<%=store.id%>"><i class="fas fa-info-circle"></i></a>
               <p class="store-address-card"><%= store.address %></p>
-              <p class="store-distance-card"><%= @distance%> m away</p>
+              <p class="store-distance-card"><%= store.Distance%> m away</p>
           </div>
           <div class="col-3 checkin">
             <%# image_tag "checkin.png", alt: "check-in", width: 60 %>
