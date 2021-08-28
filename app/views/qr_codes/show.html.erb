@@ -1,0 +1,27 @@
+<%= render 'shared/navbar' %>
+<div class="container product-info">
+  <div class="container product-image-container">
+    <%= cl_image_tag(@product.image,
+    width: 300, height: 300, crop: :fill) %>
+  </div>
+  <div class="container product-info-container">
+    <div class="product-info-title-price">
+      <h2> <%= @product.title %> </h2>
+      <p> <%= @product.price %>EUR </p>
+    </div>
+    <p> <%= @product.description %> </p>
+    <p>QR data: <%= @qr_code.content %></p>
+  </div>
+  <div class="container add-to-cart-btn">
+    <%= simple_form_for [@product, @order_item] do |f| %>
+      <%= f.submit "Add to cart", class: ' main-button' %>
+    <% end %>
+  </div>
+      <%= link_to "Go Back", pages_path, class:"option-out", id: "btn-text-black" %>
+
+  <%# <% @all_order_items.each do |item| %>
+    <%#<p><%= item.product.title %>
+    <%#- EUR <%= item.product.price %><%#</p>
+  <%#<%end%>
+</div>
+<%= render 'shared/footer' %>
