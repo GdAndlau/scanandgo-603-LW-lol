@@ -7,7 +7,7 @@ const getCoordinates = () => {
     navigator.geolocation.getCurrentPosition( function(position) {
         var lng = position.coords.longitude;
         var lat = position.coords.latitude;
-        const getLoc = () => {
+        // const getLocation = () => {
           fetch("/geolocation/location", {
             method: "POST",
             body: JSON.stringify({ langtitude: lat, longtitude: lng })
@@ -16,9 +16,9 @@ const getCoordinates = () => {
             .then((data) => {
               console.log(data); // Look at local_names.default
             });
-        };
-        getLoc();
-
+        // };
+        // getLocation();
+        console.log(lat);
       }
     );
   };
