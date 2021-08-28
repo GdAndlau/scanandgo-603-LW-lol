@@ -118,6 +118,14 @@ Product.create!(
   title: "Watch",
   description: "Amelia watch",
   price: 100,
+  store: Store.where(name: "Rewe").first,
+  image: "amelia_holzkern_holzuhr_woodwatch_fa_200320q_4_drv3wv"
+  )
+
+Product.create!(
+  title: "Watch",
+  description: "Amelia watch",
+  price: 100,
   store: Store.where(name: "Douglas").first,
   image: "amelia_holzkern_holzuhr_woodwatch_fa_200320q_4_drv3wv"
   )
