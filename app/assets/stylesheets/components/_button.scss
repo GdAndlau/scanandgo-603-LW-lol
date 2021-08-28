@@ -1,15 +1,10 @@
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
   .btn-SignUp{
-    background-color: $main-color;
-    border-radius: 10px;
-    border-color: none;
+    background-color: $secondary-color;
+    font-family: $main-font;
+    font-size: 15px;
     color: white;
-    text-decoration:none;
-    font-weight: 400;
-    font-size: 20px;
-    padding: 6px 60px;
-    width: 95%;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
   }
 
 .btn-SignUp.add-margin {
