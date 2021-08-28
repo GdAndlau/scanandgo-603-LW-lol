@@ -63,6 +63,12 @@ Store.create!(
   address: "Wilmersdorfer Str. 46, 10627 Berlin",
   opening_hours: "9 am -21 pm"
   )
+
+Store.create!(
+  name: "Rewe",
+  address: "Max-Friedlaender-Bogen 9, 80339 München",
+  opening_hours: "9 am -21 pm"
+  )
 puts "Stores created"
 puts "------------"
 puts "2. Creating 3 stores"
@@ -79,6 +85,11 @@ Store.create!(
 Store.create!(
   name: "Douglas",
   address: "Wilmersdorfer Str. 46, 10627 Berlin",
+  opening_hours: "9 am -21 pm"
+  )
+Store.create!(
+  name: "Rewe",
+  address: "Max-Friedlaender-Bogen 9, 80339 München",
   opening_hours: "9 am -21 pm"
   )
 puts "Stores created"
