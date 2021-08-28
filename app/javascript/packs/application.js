@@ -29,7 +29,7 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-import { initMapbox } from '../plugins/init_mapbox';
+import { getCoordinates } from '../plugins/getCoordinates';
 import {food}  from '../food';
 import { handlePopups } from '../popup'
 
@@ -37,7 +37,7 @@ import { handlePopups } from '../popup'
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-/*     initMapbox(); */
+     getCoordinates();
  food()
  handlePopups()
 
