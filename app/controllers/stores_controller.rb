@@ -6,6 +6,11 @@ class StoresController < ApplicationController
     # in post method render json: {response}
     if !session[:langtitude].nil? && !session[:longtitude].nil?
       @stores_near_you = Store.near([session[:langtitude], session[:longtitude]], 5)
+      @stores_near_you.each do |store|
+        store.distance = store.distance_to(
+          [session[:langtitude], session[:longtitude]]
+          )
+      end
     else
       @stores_near_you = Store.all
     end
