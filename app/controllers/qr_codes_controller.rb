@@ -7,14 +7,21 @@ class QrCodesController < ApplicationController
   def new
   end
 
-  def create
-    qr_code = QrCode.create(content: @qr_data)
-
-    redirect_to qr_code_path(qr_code)
-  end
-
   def show
   end
+
+  def create
+    @qr_code = QrCode.find_by(data: @qr_data)
+    @product = @qr_code.product
+
+    @order_item = OrderItem.new
+    @order_item.product = @product
+    @user_orders = Order.where(user: current_user)
+    @order_item.order = @user_orders.last
+    @order_item.save!
+    redirect_to product_path(@product)
+  end
+
 
   private
 

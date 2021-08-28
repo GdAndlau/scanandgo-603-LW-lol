@@ -84,12 +84,15 @@ Store.create!(
 puts "Stores created"
 puts "------------"
 
-puts "3. Creating 3 products"
+
+
+puts "4. Creating 3 products"
 Product.create!(
   title: "Shorts",
   price: 20,
   store: Store.where(name: "Zara").first,
   image: "shopping_tnvn9c",
+
   )
 Product.create!(
   title: "Jeans",
@@ -97,6 +100,7 @@ Product.create!(
   price: 30,
   store: Store.where(name: "H&M").first,
   image: "ftoamgssapv96bdq5qkt"
+
   )
 
 Product.create!(
@@ -151,6 +155,8 @@ OrderItem.create!(
   order: Order.last,
   product: Product.last
   )
+
+
 puts "Order items created"
 puts "------------"
 puts "------------"

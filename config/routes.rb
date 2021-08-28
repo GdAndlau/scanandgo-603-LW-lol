@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :pages, only: [:index]
   get "qrcode", to: "pages#qrcode"
-  resources :qr_codes, only: [:new, :create, :show]
+  resources :qr_codes, only: [:new, :create, :show, :find]
 
 
 
