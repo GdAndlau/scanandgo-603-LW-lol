@@ -1,18 +1,20 @@
-<!-- # if user is logged in do stores
-# if user is not logged in login
-#current_user
-#render -->
-<div class="background-image">
+<div class="home-main-container container">
   <div class="form-container">
-    <i class="fas fa-user-circle" ></i>
-    <h2 class="form-title">MEMBER LOGIN</h2>
-    <h1 class="welcome">Welcome to</h1>
-    <%= cl_image_tag "logo2_sq9rsw", alt: "ScanAndGo", width: 200, class: "logo" %>
-    <%= render 'shared/login', resource: User.new, resource_name: :user %>
-  </div>
-  <div class="options">
-    <%= link_to('Sign Up', new_user_registration_path, class: "option-left") %>
-    <%= link_to('Reset Password', new_user_registration_path, class: "option-right") %>
+    <div class="home-text-container">
+      <i class="fas fa-user-circle" ></i>
+      <h2>MEMBER LOGIN</h2>
+      <h1>Welcome to<span>Scan&Go!</span></h1>
+    </div>
+    <%#    <%= cl_image_tag "logo2_sq9rsw", alt: "ScanAndGo", width: 200, class: "logo" %>
+    <div class="inputs-card">
+      <%= render 'shared/login', resource: User.new, resource_name: :user %>
+       <div class="striked-text">
+       <div class="line"></div>
+       <%= link_to('Reset Password', new_user_registration_path, class: "option-right") %>
+        <div class="line"></div>
+       </div>
+      <%= link_to('Sign Up', new_user_registration_path, class: "sign-up-text") %>
+    </div>
   </div>
 </div>
-
+<div class="color-card-style"></div>

@@ -1,20 +1,111 @@
-.fas.fa-user-circle {
-  font-size: 55px;
-  color: white;
+.home-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: $main-color;
 }
 
-.welcome {
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    font-family: $main-font;
+    font-weight: 900;
+    font-size: 15px;
+    color: white;
+  }
+
+  h1 {
+    font-family: $main-font;
+    font-weight: 300;
+    color: white;
+    font-size: 33px;
+    margin-bottom: 30px;
+  }
+
+  span {
+    font-weight: 900;
+    display: block;
+  }
+}
+
+.fas.fa-user-circle {
+  font-size: 65px;
   color: white;
-  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.inputs-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 15px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.striked-text {
+  display: flex;
+  margin-top: 20px;
+
+  a {
+    padding: 0px 15px;
+    color: black;
+    font-size: 15px;
+  }
+
+  .line {
+    border-top: 1px solid #A5A5A5;
+    flex: 1 1 auto;
+    margin: 10px 0px;
+  }
+}
+
+.sign-up-text {
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 .logo {
   margin-bottom: 70px;
 }
 
-.title-color {
-  color: $main-color;
-  font-weight: bolder;
+
+/* .options {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.option-left {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: underline;
+
+}
+
+.option-right {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+} */
+
+.color-card-style {
+  background-color: $lighter-violet;
+  height: 140px;
+  border-radius: 30px 30px 0 0;
+  margin-top: -140px;
 }
 
 .background-image-edit{
@@ -31,44 +122,6 @@
   height: 80vh;
   // padding-bottom: 30px;
   margin: 0;
-}
-
-
-.background-image{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(
-    to bottom,
-    rgba(218, 82, 254, 0.7),
-    rgba(112, 58, 242, 0.7)
-  ), url("https://res.cloudinary.com/dzlzazila/image/upload/v1629820832/image_1_a1wogm.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  // padding-bottom: 30px;
-  margin: 0;
-}
-
-.options {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin: 8px 20px;
-    padding-top: 20px;
-}
-
-.option-left {
-    text-decoration: none;
-    color: $main-color;
-    font-weight: 600;
-    text-decoration: underline;
-
-}
-
-.option-right {
-    text-decoration: none;
-    color: $main-color;
 }
 
 .option-out {
