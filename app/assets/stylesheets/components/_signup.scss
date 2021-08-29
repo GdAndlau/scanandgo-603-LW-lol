@@ -1,0 +1,60 @@
+.signup-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+
+    .fas.fa-user-circle {
+        color: $main-color;
+    }
+
+    .sign-up-title {
+        color: $main-color;
+        padding-bottom: 20px;
+    }
+
+    .go-back {
+        margin-top: 10px;
+        text-align: right;
+        text-decoration: underline;
+
+        a {
+            color: $main-color;
+        }
+    }
+}
+
+.yellow-circle-decoration { 
+    height: 200px;
+    width: 200px;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    right: -80px;
+}
+
+.lighter-violet-circle-decoration {   
+    height: 100px;
+    width: 100px;
+    background-color: $lighter-violet;
+    border-radius: 50%;
+    position: absolute;
+    top: 270px;
+    left: -30px;
+    z-index: -1;
+}
+
+.darker-violet-circle-decoration {
+    height: 100px;
+    width: 100px;
+    background-color: $main-color;
+    border-radius: 50%;
+    position: absolute;
+    right: -50px;
+    bottom: 200px;
+    z-index: -1;
+}

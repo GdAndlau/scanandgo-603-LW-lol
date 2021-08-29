@@ -63,6 +63,12 @@ Store.create!(
   address: "Wilmersdorfer Str. 46, 10627 Berlin",
   opening_hours: "9 am -21 pm"
   )
+
+Store.create!(
+  name: "Rewe",
+  address: "Max-Friedlaender-Bogen 9, 80339 München",
+  opening_hours: "9 am -21 pm"
+  )
 puts "Stores created"
 puts "------------"
 puts "2. Creating 3 stores"
@@ -78,18 +84,26 @@ Store.create!(
   )
 Store.create!(
   name: "Douglas",
-  address: "Wilmersdorfer Str. 46, 10627 Berlin",
+  address: "Gleimstrasse 1, 10437, Berlin",
+  opening_hours: "9 am -21 pm"
+  )
+Store.create!(
+  name: "Rewe",
+  address: "Max-Friedlaender-Bogen 9, 80339 München",
   opening_hours: "9 am -21 pm"
   )
 puts "Stores created"
 puts "------------"
 
-puts "3. Creating 3 products"
+
+
+puts "4. Creating 3 products"
 Product.create!(
   title: "Shorts",
   price: 20,
   store: Store.where(name: "Zara").first,
   image: "shopping_tnvn9c",
+
   )
 Product.create!(
   title: "Jeans",
@@ -97,6 +111,15 @@ Product.create!(
   price: 30,
   store: Store.where(name: "H&M").first,
   image: "ftoamgssapv96bdq5qkt"
+
+  )
+
+Product.create!(
+  title: "Watch",
+  description: "Amelia watch",
+  price: 100,
+  store: Store.where(name: "Rewe").first,
+  image: "amelia_holzkern_holzuhr_woodwatch_fa_200320q_4_drv3wv"
   )
 
 Product.create!(
@@ -151,6 +174,8 @@ OrderItem.create!(
   order: Order.last,
   product: Product.last
   )
+
+
 puts "Order items created"
 puts "------------"
 puts "------------"

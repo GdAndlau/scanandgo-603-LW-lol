@@ -1,8 +1,13 @@
 
-<div class="background-image">
+<div class="container signup-main-container">
+  <div class="yellow-circle-decoration"></div>
+  <div class="lighter-violet-circle-decoration"></div>
+  <div class="darker-violet-circle-decoration"></div>
   <div class="form-container">
-    <i class="fas fa-user-circle" ></i>
-    <h2 class="form-title  mb-5">SIGN UP</h2>
+    <div class="home-text-container">
+      <i class="fas fa-user-circle" ></i>
+      <h2 class="sign-up-title">SIGN UP</h2>
+    </div>
     <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= f.error_notification %>
       <%= f.input :first_name,
