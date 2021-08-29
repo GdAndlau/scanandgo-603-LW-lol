@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "qrcode", to: "pages#qrcode"
   resources :qr_codes, only: [:new, :create, :show]
 
+  post 'geolocation/location', to: "geolocation#location"
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
