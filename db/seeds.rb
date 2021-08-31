@@ -84,7 +84,7 @@ Store.create!(
   )
 Store.create!(
   name: "Douglas",
-  address: "Wilmersdorfer Str. 46, 10627 Berlin",
+  address: "Gleimstrasse 1, 10437, Berlin",
   opening_hours: "9 am -21 pm"
   )
 Store.create!(

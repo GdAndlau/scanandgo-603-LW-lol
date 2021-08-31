@@ -1,33 +1,45 @@
 class StoresController < ApplicationController
-
   def index
     @order = Order.new
-    # conditional - if coordinates exist, save it in users session (session["longtitude"] = ) else just all stores
-    # in post method render json: {response}
-    if !session[:langtitude].nil? && !session[:longtitude].nil?
-      @stores_near_you = Store.near([session[:langtitude], session[:longtitude]], 5)
+
+    if coordinates_present?
+      @stores = Store.near([session[:langtitude], session[:longtitude]], 8)
     else
-      @stores_near_you = Store.all
+      @stores = Store.all
     end
 
     if params[:query].present?
-      @stores = @stores_near_you.where("name ILIKE ?", "%#{params[:query]}%")
+      @stores = @stores.where("name ILIKE ?", "%#{params[:query]}%")
       if @stores.length == 0
-        render "shared/missingshops"
+        return render "shared/missingshops"
       elsif @stores.length == 1
-        redirect_to store_path(@stores.first)
-      else
-
+        return redirect_to store_path(@stores.first)
       end
-    else
-      @stores = @stores_near_you
+    end
+
+  if coordinates_present?
+    @stores = @stores.to_a.map do |store|
+      distance = store.distance_to([session[:langtitude], session[:longtitude]])
+      store.distance_from_user = distance.present? ? distance.round(3) : 0
+      store
+    end
+
+    @stores.sort_by do |store|
+      store.distance_from_user
     end
   end
+  end
 
-    def show
+  def show
+    @store = Store.find(params[:id])
+    @order = Order.new
+  end
 
-      @store = Store.find(params[:id])
-      @order = Order.new
+  private
 
-    end
+  def coordinates_present?
+    session[:langtitude].present? && session[:longtitude].present?
+  end
+
+
   end
