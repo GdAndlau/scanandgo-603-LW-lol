@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'registrations' }
    root to: 'pages#home'
 
+  get "desktop", to: "pages#desktop_landing_page"
+
   resources :pages, only: [:index]
   get "qrcode", to: "pages#qrcode"
   resources :qr_codes, only: [:new, :create, :show, :find]
