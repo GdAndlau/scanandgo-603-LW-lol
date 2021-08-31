@@ -39,3 +39,28 @@
   }
 
 }
+
+.navbar {
+  background-color: $main-color;
+  border-radius: 0 0 0 30px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .search-input {
+    border-radius: 20px;
+    border: 1px solid #C4C5C7;
+    height: 50px;
+    width: 280px;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 350px) {
+  .search-input {
+    width: 330px;
+  }
+}
+
