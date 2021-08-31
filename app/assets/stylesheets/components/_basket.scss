@@ -1,3 +1,28 @@
+.order-navbar-container {
+  display: flex;
+  color: #868686;
+  align-items: center;
+  h2 {
+    font-family: "Montserrat";
+    font-size: 21px;
+    margin: 0 auto;
+  }
+
+  i {
+    font-size: 35px;
+  }
+}
+
+.line-basket {
+  border-top: 4px solid #cfcfcf;
+  width: 217px;
+  margin: 10px auto;
+}
+
+.pay-button {
+  padding: 10px 40px;
+}
+
 #toggle-me{
   width: 100%;
   height: 162px;
@@ -21,7 +46,7 @@
   text-align: center;
   padding: 8x 0px;
   font-weight: 500;
-  margin-top: 8px;
+  margin-top: 20px;
 }
   
 .continue-shopping a {
@@ -62,4 +87,5 @@ div.sticky {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
+  text-align: center;
 }

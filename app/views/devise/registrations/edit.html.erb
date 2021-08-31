@@ -1,7 +1,6 @@
-<%= render 'shared/navbar' %>
-<div class="background-image-edit">
-    <div class="form-container">
-      <h2 class="secondary-title title-card-find title-text-color" ><b>Update <span style="color:purple">profile</b></span></h2>
+
+    <div class="form-container-update container">
+      <h2><b>Update <span>Profile</b></span></h2>
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
             <%= f.error_notification %>
             <%= f.input :first_name,
@@ -41,6 +40,7 @@
   <div class="options">
     <p><%= button_to "Cancel my account", root_path, data: { confirm: "Are you sure?" }, method: :delete, class:"option-out" %></p>
     <p><%= button_to "Log out", destroy_user_session_path, method: :delete, class:"option-out"%></p>
+      <%= render 'shared/footer' %>
   </div>
-</div>
-    <%= render 'shared/footer' %>
+
+
