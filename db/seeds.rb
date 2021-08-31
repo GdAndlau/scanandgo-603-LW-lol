@@ -46,51 +46,62 @@ User.create!(
   )
 puts "Users created"
 puts "------------"
-
-puts "2. Creating 3 stores"
-Store.create!(
-  name: "Zara",
-  address: "Tauentzienstraße 7a, 10789 Berlin",
-  opening_hours: "9 am - 10 pm"
-  )
-Store.create!(
-  name: "H&M",
-  address: "Kurfürstendamm 237, 10719 Berlin",
-  opening_hours: "9 am -18 am"
-  )
-Store.create!(
-  name: "Douglas",
-  address: "Wilmersdorfer Str. 46, 10627 Berlin",
-  opening_hours: "9 am -21 pm"
-  )
-
-Store.create!(
-  name: "Rewe",
-  address: "Max-Friedlaender-Bogen 9, 80339 München",
-  opening_hours: "9 am -21 pm"
-  )
-puts "Stores created"
 puts "------------"
-puts "2. Creating 3 stores"
+puts "2. Creating 4 stores"
 Store.create!(
   name: "Zara",
   address: "Eberswalder Strasse 3, 10789 Berlin",
-  opening_hours: "9 am - 10 pm"
+  opening_hours: "9 - 20"
+  )
+Store.create!(
+  name: "Zara",
+  address: "Friedrichstraße 88, 10117 Berlin",
+  opening_hours: "9 - 20"
+  )
+Store.create!(
+  name: "Zara",
+  address: "Leipziger Pl. 12-13, 10117 Berlin",
+  opening_hours: "10 - 20"
+  )
+Store.create!(
+  name: "Zara",
+  address: "Tauentzienstraße 7a, 10789 Berlin",
+  opening_hours: "10 - 20"
   )
 Store.create!(
   name: "H&M",
   address: "Kurfürstendamm 237, 10719 Berlin",
-  opening_hours: "9 am -18 am"
+  opening_hours: "9 - 18"
+  )
+Store.create!(
+  name: "H&M",
+  address: "Karl-Marx-Straße 92-98, 12043 Berlin",
+  opening_hours: "10 - 21"
+  )
+Store.create!(
+  name: "H&M",
+  address: "Grunerstraße 20, 10179 Berlin",
+  opening_hours: "10 - 21"
+  )
+Store.create!(
+  name: "H&M",
+  address: "Neue Schönhauser Str. 13, 10178 Berlin",
+  opening_hours: "10 - 21"
   )
 Store.create!(
   name: "Douglas",
   address: "Gleimstrasse 1, 10437, Berlin",
-  opening_hours: "9 am -21 pm"
+  opening_hours: "9 - 21"
+  )
+Store.create!(
+  name: "Douglas",
+  address: "Leipziger Pl. 12, 10117 Berlin",
+  opening_hours: "10 - 21"
   )
 Store.create!(
   name: "Rewe",
   address: "Max-Friedlaender-Bogen 9, 80339 München",
-  opening_hours: "9 am -21 pm"
+  opening_hours: "9 - 21"
   )
 puts "Stores created"
 puts "------------"
