@@ -101,6 +101,7 @@ puts "4. Creating 3 products"
 Product.create!(
   title: "Shorts",
   price: 20,
+  price_cents: 100,
   store: Store.where(name: "Zara").first,
   image: "shopping_tnvn9c",
 
@@ -109,6 +110,7 @@ Product.create!(
   title: "Jeans",
   description: "Fit Jeans",
   price: 30,
+  price_cents: 100,
   store: Store.where(name: "H&M").first,
   image: "ftoamgssapv96bdq5qkt"
 
@@ -118,6 +120,8 @@ Product.create!(
   title: "Watch",
   description: "Amelia watch",
   price: 100,
+  price_cents: 100,
+
   store: Store.where(name: "Rewe").first,
   image: "amelia_holzkern_holzuhr_woodwatch_fa_200320q_4_drv3wv"
   )
@@ -126,6 +130,7 @@ Product.create!(
   title: "Watch",
   description: "Amelia watch",
   price: 100,
+  price_cents: 100,
   store: Store.where(name: "Douglas").first,
   image: "amelia_holzkern_holzuhr_woodwatch_fa_200320q_4_drv3wv"
   )
@@ -137,6 +142,8 @@ Product.create!(
   title: "Watch",
   description: "Fancy watch",
   price: 45,
+  price_cents: 100,
+
   store: Store.where(name: "Douglas").first,
   image: "HamburgQ_VintageMokka_Wristshot_900x_lwms6g"
   )
