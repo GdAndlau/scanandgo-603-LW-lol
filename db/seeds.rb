@@ -74,7 +74,7 @@ puts "------------"
 puts "2. Creating 3 stores"
 Store.create!(
   name: "Zara",
-  address: "Tauentzienstraße 7a, 10789 Berlin",
+  address: "Eberswalder Strasse 3, 10789 Berlin",
   opening_hours: "9 am - 10 pm"
   )
 Store.create!(

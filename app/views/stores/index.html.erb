@@ -1,4 +1,5 @@
   <%= render 'shared/navbar' %>
+
     <%# <div class="input-group input-group-sm mb-3">
       <span class="input-group-text" id="inputGroup-sizing-sm">Storefinder</span>
         <input type="search" id="store-search" placeholder="Look for a store in ..." />
@@ -17,12 +18,22 @@
 
     <div class=" store-card-container scroll-touch ">
       <% @stores.each do |store| %>
+        <% if store.distance_from_user.present? && store.distance_from_user < 1 %>
+          <% @rounded_distance = "#{(store.distance_from_user*1000).round(0)} m"  %>
+        <% elsif store.distance_from_user.present? && store.distance_from_user >= 1 %>
+          <% @rounded_distance = "#{store.distance_from_user.round(1)} km" %>
+        <% end %>
+
       <div class=" store-card-main">
         <div class="row">
           <div class="col-9 store-card-text">
              <p class="store-title-card"><%= store.name.upcase %></p><a class="info-icon" href="/stores/<%=store.id%>"><i class="fas fa-info-circle"></i></a>
               <p class="store-address-card"><%= store.address %></p>
-              <p class="store-distance-card"><%= store.distance_from_user%> m away</p>
+              <% if store.distance_from_user.present? %>
+               <p class="store-distance-card"><%= @rounded_distance %> away</p>
+              <% else %>
+                <p class="store-distance-card"></p>
+              <% end %>
           </div>
           <div class="col-3 checkin">
             <%# image_tag "checkin.png", alt: "check-in", width: 60 %>
