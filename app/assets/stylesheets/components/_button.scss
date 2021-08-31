@@ -116,4 +116,14 @@
   margin-top: 10px;
 }
 
-
+.main-button-yellow {
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.253);
+  width: 100%;
+  padding: 8px 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+}
