@@ -2,7 +2,7 @@ class StoresController < ApplicationController
   def index
     @order = Order.new
     if coordinates_present?
-      @stores = Store.near([session[:langtitude], session[:longtitude]], 8)
+      @stores = Store.near([session[:langtitude], session[:longtitude]], 40)
     else
       @stores = Store.all
     end

@@ -9,9 +9,11 @@ class PagesController < ApplicationController
   end
 
   def index
-
   end
 
   def qrcode
+  end
+
+  def desktop_landing_page
   end
 end
