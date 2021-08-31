@@ -1,55 +1,65 @@
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-  // .footer-fill {
-  //   height: 50px;
-  // }
-
-  .bottom-container{
-    position: fixed;
-    bottom: 0;
-    height: 80px;
-    width: 100%;
-    background: linear-gradient(#DA52FE, #9198e5);
-  }
-
-  .bottom-icones{
-    display: flex;
-    justify-content: space-around;
-  }
-
-
-}
-
 .cart {
   padding-top: 0px;
 }
-
-/* Portrait and Landscape */
-
-
-
-/* Portrait and Landscape */
-
-
-
-
-/* ----------- iPhone 6, 7 and 8 ----------- */
-
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
   .item-count {
   bottom: 4.5vh;
   right: 20vh;
   }
+
+.footer-fill {
+  height: 90px;
 }
+
+.container-footer {
+  display: flex;
+  height: 90px;
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .icon-footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 46px;
+    width: 46px;
+    border: 0.5px solid #E4E4E4;
+    border-radius: 50%;
+    background: radial-gradient(white, #C4C4C4);
+
+    i {
+      font-size: 30px;
+      color: #757575;
+    }
+  }
+  
+  .icon-footer {
+    color: #757575;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    text-decoration: none;
+    
+    div {
+    
+      &:focus, &:hover {
+      background: linear-gradient(#FEB457, #FED357);
+    }
+  }
+
+  i {
+    &:focus, &:hover {
+      color: white;
+    }
+  }
+  }
+}
+
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
