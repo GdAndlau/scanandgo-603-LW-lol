@@ -1,5 +1,12 @@
   <%= render 'shared/navbar' %>
 
+  <div class="card-main-content autoComplete_wrapper">
+    <%= form_tag stores_path, method: :get, data: {autocomplete_stores: @autocomplete_stores.to_json}, id: "autocomplete-form" do %>
+      <%= text_field_tag :query,
+        params[:query], id: "autoComplete",
+        class: "form-control",  type:"search" %>
+      <% end %>
+
     <%# <div class="input-group input-group-sm mb-3">
       <span class="input-group-text" id="inputGroup-sizing-sm">Storefinder</span>
         <input type="search" id="store-search" placeholder="Look for a store in ..." />
