@@ -124,6 +124,38 @@
   margin: 0;
 }
 
+.background-image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  height: 100vh;
+  // padding-bottom: 30px;
+  margin: 0;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 8px 20px;
+    padding-top: 20px;
+}
+
+.option-left {
+    text-decoration: none;
+    color: $main-color;
+    font-weight: 600;
+    text-decoration: underline;
+
+}
+
+.option-right {
+    text-decoration: none;
+    color: $main-color;
+}
+
 .option-out {
     text-decoration: none;
     color: $main-color;
