@@ -9,7 +9,7 @@
     max-width: 100%;
     background: linear-gradient(rgba(218, 82, 254, 0.7), rgba(112, 58, 242, 0.7));
     padding: 15px;
-    position: sticky;    
+    position: sticky;
     top: 0;
 
 
@@ -56,6 +56,14 @@
     text-align: center;
   }
 
+}
+
+.selection {
+  margin-top: 25vh;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffc6c6;
+  transition: var(--transition-1);
 }
 
 @media only screen and (min-width: 350px) {

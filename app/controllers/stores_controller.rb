@@ -35,11 +35,23 @@ class StoresController < ApplicationController
       elsif store.distance_from_user.present? && store.distance_from_user >= 1
         @rounded_distance = "#{store.distance_from_user.round(1)} km"
       end
+
+
+      if @rounded_distance.present?
       {
         # url2: "#{redirect_to 'see store', store_path(store)}",
         name: "#{store.name} - #{@rounded_distance} away",
-        id: store.id
+        id: store.id,
+        path: store_path(store)
       }
+      else
+        full_address =  "#{store.name} - #{store.address}"
+        {
+        name: "#{full_address.first(25)} ... ",
+        id: store.id,
+        path: store_path(store)
+      }
+      end
     end
   end
 

@@ -4,6 +4,10 @@ import autoComplete from "@tarekraafat/autocomplete.js";
 
 const autoCompleteJS = () => {
   const form = document.getElementById("autocomplete-form");
+
+  if(!form) return ;
+
+
   const autocompleteData = JSON.parse(form.dataset.autocompleteStores);
   console.log(autocompleteData);
   new autoComplete(
@@ -14,37 +18,54 @@ const autoCompleteJS = () => {
         keys: ["name"]
       },
 
-    resultsList: {
-        element: (list, data) => {
-            if (!data.results.length) {
-                // Create "No Results" message element
-                const message = document.createElement("div");
-                // Add class to the created element
-                message.setAttribute("class", "no_result");
-                // Add message text content
-                message.innerHTML = `<span>Found No Results for "${data.query}"</span>`;
-                // Append message element to the results list
-                list.prepend(message);
-            }
-        },
-        noResults: true,
+      resultsList: {
+    element: (list, data) => {
+      const info = document.createElement("p");
+      if (data.results.length > 0) {
+        info.innerHTML = `Displaying <strong>${data.results.length}</strong> out of <strong>${data.matches.length}</strong> results`;
+      } else {
+        info.innerHTML = `Found <strong>${data.matches.length}</strong> matching results for <strong>"${data.query}"</strong>`;
+      }
+      list.prepend(info);
     },
+    noResults: true,
+    maxResults: 15,
+    tabSelect: true
+  },
 
     resultItem: {
-        highlight: true
-      },
+    element: (item, data) => {
+      // Modify Results Item Style
+      item.style = "display: flex; justify-content: space-between; background-color: gray";
+      // Modify Results Item Content
+      item.innerHTML = `
+      <span style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; color:white;" class="p-3">
+        ${data.match}
+      </span>`;
+    },
+  },
 
     events: {
         input: {
             selection: (event) => {
+            console.log(event);
             const selection = event.detail.selection.value;
             const inputField = document.getElementById('autoComplete')
             inputField.value = selection.name;
+            const path = selection.path;
+            // let obj = JSON.parse(form.dataset.autocompleteStores).find(obj => obj.name == selection.name);
+            // console.log(obj)
+            Turbolinks.visit(path);
                 }
                 }
             }
+
+
     }
   )
+
+
+
  };
 
 export { autoCompleteJS };
