@@ -3,21 +3,16 @@
 <% if request.env['HTTP_REFERER'].present? && request.env['HTTP_REFERER'] %>
 <%#     <%= link_to :back, class: "back-arrow" do%>
       <%# <i class="fas fa-arrow-left stick-left"></i> %>
-   <%#  <% end %> 
-<%# <% else %> 
-  <%# <%= link_to root_path, class: "back-arrow" do%> 
+   <%#  <% end %>
+<%# <% else %>
+  <%# <%= link_to root_path, class: "back-arrow" do%>
       <%# <i class="fas fa-arrow-left stick-left"></i> %>
-   <%#  <% end %> 
-<%# <% end %> 
-   <%#  <%= cl_image_tag "logo2_sq9rsw", alt: "ScanAndGo", width: 150 %> 
+   <%#  <% end %>
+<%# <% end %>
+   <%#  <%= cl_image_tag "logo2_sq9rsw", alt: "ScanAndGo", width: 150 %>
  <%#  </div> %>
-<%# </div> %> 
- <div class="navbar">
-    <%= form_tag stores_path, method: :get do %>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "search-input",
-        placeholder: "Search for shops in your area"
-      %>
-    <% end %>
- </div>
+<%# </div> %>
+
+
+
+
