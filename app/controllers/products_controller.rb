@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
 
 
 def create
-  product = Product.find(params[:teddy_id])
+  product = Product.find(params[:product_id])
   order  = Order.create!(product: product, product_sku: product.sku, amount: product.price, state: 'pending', user: current_user)
 
   session = Stripe::Checkout::Session.create(
@@ -21,7 +21,7 @@ def create
       images: [product.photo_url],
       amount: product.price_cents,
       currency: 'eur',
-      quantity: 1
+      quantity: 1 #Needs to be fixed
     }],
     success_url: order_url(order),
     cancel_url: order_url(order)
