@@ -51,7 +51,7 @@ const autoCompleteJS = () => {
             console.log(event);
             const selection = event.detail.selection.value;
             const inputField = document.getElementById('autoComplete')
-            inputField.value = selection.name;
+            // inputField.value = selection.name;
             const path = selection.path;
             // let obj = JSON.parse(form.dataset.autocompleteStores).find(obj => obj.name == selection.name);
             // console.log(obj)
