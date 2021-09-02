@@ -58,6 +58,24 @@
 
 }
 
+#dropdown {
+  background-color: $light-gray;
+}
+
+.dropdown-item {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: $main-color;
+  width: 280px;
+}
+
+.autoComplete_wrapper ul {
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  }
+
 
 @media only screen and (min-width: 350px) {
   .search-input {

@@ -19,27 +19,27 @@ const autoCompleteJS = () => {
       },
 
       resultsList: {
-    element: (list, data) => {
-      const info = document.createElement("p");
-      if (data.results.length > 0) {
-        info.innerHTML = `Displaying <strong>${data.results.length}</strong> out of <strong>${data.matches.length}</strong> results`;
-      } else {
-        info.innerHTML = `Found <strong>${data.matches.length}</strong> matching results for <strong>"${data.query}"</strong>`;
-      }
-      list.prepend(info);
-    },
+    // element: (list, data) => {
+    //   const info = document.createElement("p");
+    //   if (data.results.length > 0) {
+    //     info.innerHTML = `Displaying <strong>${data.results.length}</strong> out of <strong>${data.matches.length}</strong> results`;
+    //   } else {
+    //     info.innerHTML = `Found <strong>${data.matches.length}</strong> matching results for <strong>"${data.query}"</strong>`;
+    //   }
+    //   list.prepend(info);
+    // },
     noResults: true,
-    maxResults: 15,
+    maxResults: 5,
     tabSelect: true
   },
 
     resultItem: {
     element: (item, data) => {
       // Modify Results Item Style
-      item.style = "display: flex; justify-content: space-between; background-color: gray";
+      item.id = "dropdown";
       // Modify Results Item Content
       item.innerHTML = `
-      <span style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; color:white;" class="p-3">
+      <span class="dropdown-item">
         ${data.match}
       </span>`;
     },
