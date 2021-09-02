@@ -224,10 +224,6 @@ Store.create!(
   opening_hours: "10 - 20"
   )
 
-
-
-
-
 puts "Stores created"
 puts "------------"
 
