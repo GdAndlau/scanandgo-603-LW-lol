@@ -17,9 +17,10 @@
       
     <a class="icon-footer"><div><i class="uil uil-qrcode-scan"></i></div>Scanner</a>
     <%= link_to order_items_path, class:"icon-footer" do %>
-    <%#  <span class="fa-stack fa-2x has-badge" data-count=<%= items_count %>
-      <div><i class="uil uil-shopping-bag "></i></div>Basket
+    <%#  <span class="fa-stack fa-2x has-badge" data-count=<%= items_count   request.fullpath == "/users/edit" ?  orange_footer = "orange-footer" : orange_footer = "" %>
+      <div><i class="uil uil-shopping-bag"></i></div>Basket
     <% end %>
+    
 
     <div class="icon popup" id="open-popup-trigger">
       <% if !@last_order.nil? && !@last_order.completed? %>
