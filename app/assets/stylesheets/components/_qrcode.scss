@@ -1,10 +1,16 @@
+.qr-main-container {
+    height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #video{
   margin: 0px 30px;
 }
 
 
 .qr-text {
-    margin-top: 20px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
@@ -15,16 +21,16 @@
         color: #7B7B7B;
         font-family: "Montserrat";
         font-size: 25px;
+        margin-top: 30px;
     }
 
     p {
-        font-size: 13px;
+        font-size: 15px;
         color: #BBBBBB;
     }
 }
 
 .qr-code-span-text {
-    color: #9842DB;
     font-weight: 900;
 }
 
@@ -39,4 +45,8 @@
     margin: 0px;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .go-to-qr-btn {
+    margin-top: 30px;
   }

@@ -21,6 +21,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  box-shadow: 0px -5px 15px #5959592a;
 
   .icon-footer div{
     display: flex;
@@ -46,17 +47,12 @@
     text-decoration: none;
     
     div {
-    
       &:focus, &:hover {
       background: linear-gradient(#FEB457, #FED357);
     }
   }
 
-  i {
-    &:focus, &:hover {
-      color: white;
-    }
-  }
+
   }
 }
 
