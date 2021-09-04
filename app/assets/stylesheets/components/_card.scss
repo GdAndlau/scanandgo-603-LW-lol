@@ -39,56 +39,64 @@
   color: #7B7B7B;
 }
 
+.stores-search-title {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+}
 
-.store-card-main{
-  // border-style: solid;
+.store-card {
+  display: flex;
   border-radius: 8px;
-  // border-color: #9842DB;
-  width: 90%;
   margin: 8px auto;
+  padding: 10px;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 12px 0px;
+
+  img {
+    width: 100px;
+    border-radius: 8px;
+  }
 }
 
-.store-card-text {
-padding: 0px;
+.store-card-head {
+  display: flex;
+  align-items: center;
 
+  .store-title {
+    font-weight: 600;
+    margin: 0;
+  }
 }
 
-.store-title-card{
-  display:inline;
+.store-card-content {
+  margin-left: 20px;
+}
+
+.store-distance{
+  margin: 0px 0px 10px 5px;
   font-size: 16px;
-  margin-right: 0px;
-  padding-right: 0px;
-  color: $main-color;
-  font-weight: 700;
-  margin-bottom: 24px;
-
 }
 
-.store-distance-card{
-  margin: 0px 0px 10px 0px;
-  font-size: 16px;
+.store-address, .store-distance {
+  font-size: 12px;
+  margin-bottom: 0;
+  margin-top: 4px;
+  color: #7B7B7B;
+} 
+
+.store-location {
+  display: flex;
 }
 
 .info-icon i {
   font-size: 16px;
-  vertical-align: super;
   padding-left: 4px;
-  color: $main-color;
+  color: black;
 }
 
-.store-distance-card {
-  padding-bottom: 18px;
-}
-
-.store-address-card, .store-distance-card {
-  font-size: 12px;
-  margin-bottom: 0;
-  margin-top: 4px;
-  color: gray;
-}
-// show of stores
 
 .store-grey-background{
   background-color: lightgrey;
@@ -111,10 +119,6 @@ padding: 0px;
 .store-show-info{
   background: white;
   padding: 5px 0px 8px 0px;
-  box-bottom-shadow: 4px rgba(0,0,0,0.4);
-  // display: flex;
-  // flex-direction: vertical;
-  // align-items: center;
 }
 
 .store-show-title{
@@ -142,30 +146,6 @@ padding: 0px;
 .checkin {
   display: flex;
   align-items: center;
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-  // .store-show-info{
-  //     padding: 5px 0px 10px 0px;
-  // }
-}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-    // .store-show-card{
-    //   margin: 90px 20px;
-    // }
 }
 
 
