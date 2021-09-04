@@ -46,11 +46,11 @@
 
     <% if current_uri == "/order_items" %>
        <%= link_to order_items_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
-              <div id="orange-highlight"><i class="uil uil-shopping-bag"></i></div>Basket
+              <div id="orange-highlight"><i class="uil uil-shopping-bag"></i><div id="basket-counter"><%= items_count %></div></div>Basket
           <% end %>
     <% else %>
         <%= link_to order_items_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
-              <div><i class="uil uil-shopping-bag"></i></div>Basket
+              <div><i class="uil uil-shopping-bag"></i><div id="basket-counter"><%= items_count %></div></div>Basket
           <% end %>
     <% end %>
 
