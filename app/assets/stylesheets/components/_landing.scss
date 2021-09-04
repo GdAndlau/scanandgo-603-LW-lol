@@ -1,0 +1,60 @@
+.app-info {
+  text-align: left;
+  padding: 60px;
+  max-width: 1128px;
+  position: relative;
+  color: #fff;
+}
+
+.landing-background {
+  background-color: $main-color;
+  background-size: cover;
+  height: max-content;
+  
+
+  
+}
+
+.inner-text {
+  padding-top: 88px;
+  padding-right: 48px;
+  min-width: 448px;
+  max-width: 588px;
+  position: relative;
+}
+
+.inner-text h1 {
+  margin-bottom: 24px;
+  display: block;
+
+}
+
+.inner-text p {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.get-app {
+  margin: 0px;
+  text-align: left ;
+}
+
+.get-app p {
+  display: inline-flex;
+}
+
+
+.landing-photo {
+  display: block;
+}
+
+.landing-photo img {
+  width: 250px;
+}
+
+
+.landing-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 0px;
+}
