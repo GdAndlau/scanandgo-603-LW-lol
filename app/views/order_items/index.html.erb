@@ -9,6 +9,8 @@
     <div>
       <%= render "shared/order_items" %>
     </div>
+
+    <% if @last_order.present? && !@last_order.completed?  %>
     <div class="payment sticky">
       <div class="total-price">
         <h2>
@@ -24,6 +26,14 @@
         <%= link_to "Continue Shopping", new_qr_code_path  %>
       </div>
     </div>
+    <% else %>
+      <div class="order-navbar-container container">
+        <h2>
+          Your basket is empty
+        </h2>
+      </div>
+    <% end %>
+
   <%= render 'shared/footer' %>
 </div>
 

@@ -4,6 +4,9 @@ class OrderItemsController < ApplicationController
     @product_id = Product.find(params[:product_id])
     @user_orders = Order.where(user: current_user)
     @order = @user_orders.last
+    if @order.nil?
+      @order = Order.new(store: Store.all.sample, user: current_user)
+    end
     @order_item.product = @product_id
     @order_item.order = @order
 
