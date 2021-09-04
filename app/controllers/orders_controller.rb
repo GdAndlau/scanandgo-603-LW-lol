@@ -24,6 +24,7 @@ class OrdersController < ApplicationController
     @total_price = 0
     @last_order.order_items.each do |item|
     @total_price = @total_price + item.product.price
+    @order = current_user.orders.find(params[:id]) # Stripe related
 
     end
   end
@@ -37,3 +38,6 @@ class OrdersController < ApplicationController
 
   end
 end
+
+
+

@@ -7,38 +7,70 @@
   <% else %>
     <% items_count = 0 %>
   <% end %>
+  <% current_uri = request.env['PATH_INFO']
+ %>
 
   <div class="footer-fill"></div>
   <div class="container-footer">
 
-    <%= link_to edit_user_registration_path, class: "icon-footer", resource: current_user, resource_name: :user do %>
-      <div><i class="uil uil-setting"></i></div>User
-    <% end %>
-      
-    <a class="icon-footer"><div><i class="uil uil-qrcode-scan"></i></div>Scanner</a>
-    <%= link_to order_items_path, class:"icon-footer" do %>
-    <%#  <span class="fa-stack fa-2x has-badge" data-count=<%= items_count %>
-      <div><i class="uil uil-shopping-bag "></i></div>Basket
+
+    <% if current_uri == "/users/edit" %>
+       <%= link_to edit_user_registration_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
+              <div id="orange-highlight"><i class="uil uil-setting "></i></div>User
+          <% end %>
+    <% else %>
+        <%= link_to edit_user_registration_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
+          <div><i class="uil uil-setting "></i></div>User
+          <% end %>
     <% end %>
 
+    <% if current_uri == "/qr_codes/new" %>
+       <%= link_to new_qr_code_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
+              <div id="orange-highlight"><i class="uil uil-qrcode-scan"></i></div>Scanner
+          <% end %>
+    <% else %>
+        <%= link_to new_qr_code_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
+              <div><i class="uil uil-qrcode-scan"></i></div>Scanner
+          <% end %>
+    <% end %>
+
+
+    <% if current_uri == "/order_items" %>
+       <%= link_to order_items_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
+              <div id="orange-highlight"><i class="uil uil-shopping-bag"></i></div>Basket
+          <% end %>
+    <% else %>
+        <%= link_to order_items_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
+              <div><i class="uil uil-shopping-bag"></i></div>Basket
+          <% end %>
+    <% end %>
+
+
     <div class="icon popup" id="open-popup-trigger">
-      <% if !@last_order.nil? && !@last_order.completed? %>
-        <a class="icon-footer"><div><i class="uil uil-home"></i></div>Home</a>
-        <span class="popuptext" id="myPopup">
-          <i class="fas fa-exclamation-triangle"></i><br>
-          Your current session will be destroy and you will be logged out of the shop <br><br>
-          <b>Do you wanna check-out of this shop?</b><br><br>
-          <div class="btn-container-popup">
-            <button class="main-button"><div id="close-popup-trigger">No, I want to stay in this shop</div></button><br>
-            <button class="main-button-lighter">
-              <%= link_to "Yes, I want to leave the shop", order_path(@last_order), method: :delete %>
-            </button>
-            <br>
-          </div>
-        </span>
+      <% if !@last_order.nil? && !@last_order.completed? && items_count > 0 %>
+            <a class="icon-footer"><div><i class="uil uil-home" ></i></div>Home</a>
+            <span class="popuptext" id="myPopup">
+              <i class="fas fa-exclamation-triangle"></i><br>
+              Your current session will be destroy and you will be logged out of the shop <br><br>
+              <b>Do you wanna check-out of this shop?</b><br>
+              <br>
+              <div class="btn-container-popup">
+                <button class="main-button"><div id="close-popup-trigger">No, I want to stay in this shop</div></button><br>
+                <button class="main-button-lighter">
+                  <%= link_to "Yes, I want to leave the shop", order_path(@last_order), method: :delete %>
+                </button>
+                <br>
+              </div>
+            </span>
         <% else %>
-          <%= link_to root_path do%>
-            <a class="icon-footer"><div><i class="uil uil-home"></i></div>Home</a>
+          <% if current_uri == "/stores" %>
+              <%= link_to root_path, class: "icon-footer" do %>
+                <div><i class="uil uil-home"></i></div id="orange-highlight">Home
+              <% end %>
+          <% else %>
+            <%= link_to root_path, class: "icon-footer" do %>
+                <div><i class="uil uil-home"></i></div id="orange-highlight"> Home
+            <% end %>
         <% end %>
       <% end %>
     </div>
