@@ -27,9 +27,9 @@ ActiveRecord::Schema.define(version: 2021_08_31_183541) do
   create_table "orders", force: :cascade do |t|
     t.bigint "store_id"
     t.bigint "user_id"
+    t.boolean "completed"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.boolean "completed"
     t.integer "price_cents", default: 0, null: false
     t.string "state"
     t.string "product_sku"
