@@ -14,17 +14,20 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   resources :stores, only: [:index, :show] do
-    resources :orders, only: [:create, :show] do
-      resources :payments, only: [:new]
+    resources :orders, only: [:create]
     end
+
+  resource :orders, only: [:show] do
+    resources :payments, only: [:new]
   end
+
   resources :products, only: [:show] do
     resources :order_items, only: [:create]
   end
 
   resources :order_items, only: [:index, :destroy] #question?  resources :sessions, only: [:show] (nested?)
 
-  resources :orders, only: [:show, :edit, :update, :destroy]
+  resources :orders, only: [ :edit, :update, :destroy]
 
 mount StripeEvent::Engine, at: '/stripe-webhooks'
 

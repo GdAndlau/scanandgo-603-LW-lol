@@ -11,6 +11,7 @@ class ProductsController < ApplicationController
 
 
 def create
+  raise
   product = Product.find(params[:product_id])
   order  = Order.create!(product: product, product_sku: product.sku, amount: product.price, state: 'pending', user: current_user)
 
