@@ -1,8 +1,8 @@
-  <%= render 'shared/navbar' %>
+<%= render 'shared/navbar' %>
 <div class="container">
 
-<h3>Unfortunately there are no shops called "
-<%= params[:query] %>
-" in our area</h3>
+  <h3 class="missing-shops-message">Unfortunately there are no shops called "
+  <span><%= params[:query] %></span>
+  " in our area</h3>
 </div>
 <%= render 'shared/footer' %>

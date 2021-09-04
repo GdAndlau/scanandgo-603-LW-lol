@@ -1,26 +1,41 @@
+
 <div class="order-index-container">
-  <%= render 'shared/navbar' %>
-    <div class="secondary-title title-card-find title-text-color">
-      <h2>My Shopping Cart</h2>
-    </div>
+  <div class="order-navbar-container container">
+    <i class="uil uil-angle-left-b"></i>
+    <h2>Your <span>basket</span></h2>
+    <i class="uil uil-angle-left-b uil--hidden"></i>
+  </div>
+    <div class="line-basket"></div>
     <div>
       <%= render "shared/order_items" %>
     </div>
+
+    <% if @last_order.present? && !@last_order.completed?  %>
     <div class="payment sticky">
       <div class="total-price">
         <h2>
           Total price:
-          <h3>
-          EUR <%= @total_price %>
-          </h3>
         </h2>
+        <h3>
+          € <%= @total_price %>
+        </h3>
       </div>
 
-      <%= link_to 'Confirm payment', new_orders_payment_path, class:"btn-SignUp btn-block btn-pay" %>
+
+      <%= link_to 'Confirm payment', new_orders_payment_path, class:"main-button pay-button" %>
+
       <div class="continue-shopping">
-        <%= link_to "Continue Shopping", pages_path  %>
+        <%= link_to "Continue Shopping", new_qr_code_path  %>
       </div>
     </div>
+    <% else %>
+      <div class="order-navbar-container container">
+        <h2>
+          Your basket is empty
+        </h2>
+      </div>
+    <% end %>
+
   <%= render 'shared/footer' %>
 </div>
 
