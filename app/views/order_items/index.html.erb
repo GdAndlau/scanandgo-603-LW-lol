@@ -1,9 +1,11 @@
 
 <div class="order-index-container">
   <div class="order-navbar-container container">
-    <i class="uil uil-angle-left-b"></i>
-    <h2>Your <span>basket</span></h2>
-    <i class="uil uil-angle-left-b uil--hidden"></i>
+    <%= link_to stores_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
+      <i class="uil uil-angle-left-b"></i>
+    <% end %>
+  <h2>Your <span>basket</span></h2>
+
   </div>
     <div class="line-basket"></div>
     <div>
