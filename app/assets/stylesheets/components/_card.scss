@@ -1,30 +1,44 @@
 // index of stores
 
-.store-card-container {
-  margin-bottom: 100px;
+.store-show-image {
+  i {
+    font-size: 40px;
+    color: white;
+  }
 }
 
-.card-main-container{
-  background-color: white;
+.store-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+  }
 }
 
-// .card-main-content{
-//   overflow: auto;
-// }
+.store-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  background: radial-gradient(white, #C4C4C4);
 
-// .scroll-touch {
-//   -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
-// }
-
-.title-card-find{
-  text-align: center;
-  margin-top: 10px;
-  font-size: 35px;
+  i {
+    font-size: 25px;
+    color: #757575;
+  }
 }
 
-.title-check-in-now{
-  text-align: center;
+.store-details {
+  font-size: 14px;
+  color: #7B7B7B;
 }
+
 
 .store-card-main{
   // border-style: solid;
@@ -91,7 +105,7 @@ padding: 0px;
 .store-show-image{
   background-image: url("https://res.cloudinary.com/dzlzazila/image/upload/v1629820833/zara_jnin2e.jpg");
   background-size: cover;
-  height: 250px;
+  height: 350px;
   margin: 0px;
 }
 .store-show-info{
