@@ -56,17 +56,17 @@ Store.create!(
 Store.create!(
   name: "Zara",
   address: "Friedrichstraße 88, 10117 Berlin",
-  opening_hours: "9 am - 8pm"
+  opening_hours: "9 am - 8 pm"
   )
 Store.create!(
   name: "Zara",
   address: "Leipziger Pl. 12-13, 10117 Berlin",
-  opening_hours: "10 am - 9pm"
+  opening_hours: "10 am - 9 pm"
   )
 Store.create!(
   name: "Zara",
   address: "Tauentzienstraße 7a, 10789 Berlin",
-  opening_hours: "10 am- 8pm"
+  opening_hours: "10 am- 8 pm"
   )
 Store.create!(
   name: "H&M",
@@ -81,147 +81,147 @@ Store.create!(
 Store.create!(
   name: "H&M",
   address: "Grunerstraße 20, 10179 Berlin",
-  opening_hours: "10 - 21"
+  opening_hours: "10 am - 9 pm"
   )
 Store.create!(
   name: "H&M",
   address: "Neue Schönhauser Str. 13, 10178 Berlin",
-  opening_hours: "10 - 21"
+  opening_hours: "10 am - 9 pm"
   )
 Store.create!(
   name: "Douglas",
   address: "Gleimstrasse 1, 10437, Berlin",
-  opening_hours: "9 - 21"
+  opening_hours: "9 am- 9 pm"
   )
 Store.create!(
   name: "Douglas",
   address: "Leipziger Pl. 12, 10117 Berlin",
-  opening_hours: "10 - 21"
+  opening_hours: "10 am - 9 pm"
   )
 Store.create!(
   name: "Adidas",
   address: "Münzstraße 13-15, 10178 Berlin",
-  opening_hours: "11 - 19"
+  opening_hours: "11 am - 7 pm"
   )
 Store.create!(
   name: "Adidas",
   address: "Leipziger Pl. 12, 10117 Berlin",
-  opening_hours: "10 - 19"
+  opening_hours: "10 am - 7 pm"
   )
 Store.create!(
   name: "Adidas",
   address: "Budapester Str. 38, 10787 Berlin",
-  opening_hours: "12 - 19"
+  opening_hours: "12 - 7 pm"
   )
 Store.create!(
   name: "Rewe",
   address: "Max-Friedlaender-Bogen 9, 80339 München",
-  opening_hours: "9 - 21"
+  opening_hours: "9 am - 9 am"
   )
 Store.create!(
   name: "TK Maxx",
   address: "Karl-Marx-Straße 92-98, 12043 Berlin",
-  opening_hours: "10 - 20"
+  opening_hours: "10 am - 8 pm"
   )
 Store.create!(
   name: "TK Maxx",
   address: "Wilmersdorfer Str. 108, 10627 Berlin",
-  opening_hours: "9 - 21"
+  opening_hours: "9 am - 9 pm"
   )
 Store.create!(
   name: "TK Maxx",
   address: "Hauptstraße 141-144, 10827 Berlin",
-  opening_hours: "10 - 20"
+  opening_hours: "10 am- 8 pm"
   )
 Store.create!(
   name: "Decathlon",
   address: "Rathausstraße 5, 10178 Berlin",
-  opening_hours: "10 - 21"
+  opening_hours: "10 am - 9 pm"
   )
 Store.create!(
   name: "Decathlon",
   address: "Schloßstraße 110, 12163 Berlin",
-  opening_hours: "10 - 20"
+  opening_hours: "10 am- 8 pm"
   )
 Store.create!(
   name: "Decathlon",
   address: "Wilmersdorfer Str. 46, 10627 Berlin",
-  opening_hours: "10 - 20"
+  opening_hours: "10 am - 8 pm"
   )
 Store.create!(
   name: "LUSH",
   address: "Friedrichstraße 96, 10117 Berlin",
-  opening_hours: "10.30 - 18"
+  opening_hours: "10.30 am - 6 pm"
   )
 Store.create!(
   name: "LUSH",
   address: "Rathausstraße 5, 10178 Berlin",
-  opening_hours: "11 - 19"
+  opening_hours: "11 am - 7 pm"
   )
 Store.create!(
   name: "LUSH",
   address: "Tauentzienstraße 9-12, 10789 Berlin",
-  opening_hours: "11 - 19"
+  opening_hours: "11 am - 7 pm"
   )
 Store.create!(
   name: "ROSSMAN",
   address: "Friedrichstraße 147, 10117 Berlin",
-  opening_hours: "7 - 22"
+  opening_hours: "7 am - 10 pm"
   )
 Store.create!(
   name: "ROSSMAN",
   address: "Tauentzienstraße 8, 10789 Berlin",
-  opening_hours: "8 - 22"
+  opening_hours: "8 am - 10 pm"
   )
 Store.create!(
   name: "ROSSMAN",
   address: "Ansbacher Str. 18-20, 10787 Berlin",
-  opening_hours: "11 - 19"
+  opening_hours: "11 am - 7 pm"
   )
 Store.create!(
   name: "ROSSMAN",
   address: "Kaiser-Wilhelm-Platz 1-2, 10827 Berlin",
-  opening_hours: "8 - 22"
+  opening_hours: "8 - 10 pm"
   )
 Store.create!(
   name: "ROSSMAN",
   address: "Manfred-von-Richthofen-Straße 14, 12101 Berlin",
-  opening_hours: "9 - 21"
+  opening_hours: "9 - 9 pm"
   )
 Store.create!(
   name: "ROSSMAN",
   address: "Grunerstraße 20, 10179 Berlin",
-  opening_hours: "9 - 21"
+  opening_hours: "9 am - 9 pm"
   )
 Store.create!(
   name: "Snipes",
   address: "Tauentzienstraße 19, 10789 Berlin",
-  opening_hours: "10 - 20"
+  opening_hours: "10 am - 8 pm"
   )
 Store.create!(
   name: "Snipes",
   address: "Wilmersdorfer Str. 64, 10627 Berlin",
-  opening_hours: "11 - 19"
+  opening_hours: "11 am- 7 pm"
   )
 Store.create!(
   name: "GALERIA",
   address: "Kurfürstendamm 231, 10719 Berlin",
-  opening_hours: "10 - 20"
+  opening_hours: "10 am - 8 pm"
   )
 Store.create!(
   name: "GALERIA",
   address: "Tempelhofer Damm 191, 12099 Berlin",
-  opening_hours: "11 - 19"
+  opening_hours: "11 am - 7 pm"
   )
 Store.create!(
   name: "GALERIA",
   address: "Müllerstraße 25, 13353 Berlin",
-  opening_hours: "10 - 20"
+  opening_hours: "10 am - 8 pm"
   )
 Store.create!(
   name: "GALERIA",
   address: "Wilmersdorfer Str. 118, 10627 Berlin",
-  opening_hours: "10 - 20"
+  opening_hours: "10 am - 8 pm"
   )
 
 puts "Stores created"
