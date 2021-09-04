@@ -18,7 +18,7 @@ class QrCodesController < ApplicationController
     @order_item.product = @product
     @user_orders = Order.where(user: current_user)
     @order_item.order = @user_orders.last
-    @order_item.save!
+    # @order_item.save!
     redirect_to product_path(@product)
   end
 
