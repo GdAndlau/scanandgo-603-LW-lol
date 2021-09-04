@@ -38,22 +38,26 @@
       color: #757575;
     }
   }
-  
+
   .icon-footer {
     color: #757575;
     display: flex;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
     text-decoration: none;
-    
+
     div {
       &:focus, &:hover {
       background: linear-gradient(#FEB457, #FED357);
     }
   }
-
-
   }
+
+
+}
+
+#orange-highlight {
+  background: linear-gradient(#FEB457, #FED357);
 }
 
 
