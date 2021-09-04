@@ -1,6 +1,11 @@
 <div class="stores-checkin">
   <div class="store-show-image">
-    <i class="uil uil-angle-left-b"></i>
+
+    <%= link_to stores_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
+      <i class="uil uil-angle-left-b"></i>
+    <% end %>
+
+
   </div>
   <div class="store-info container">
     <div class="store-info-header">

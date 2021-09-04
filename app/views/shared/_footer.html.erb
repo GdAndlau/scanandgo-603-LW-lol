@@ -63,8 +63,14 @@
               </div>
             </span>
         <% else %>
-          <%= link_to root_path do%>
-            <a class="icon-footer"><div><i class="uil uil-home" ></i></div>Home</a>
+          <% if current_uri == "/stores" %>
+              <%= link_to root_path, class: "icon-footer" do %>
+                <div><i class="uil uil-home"></i></div id="orange-highlight">Home
+              <% end %>
+          <% else %>
+            <%= link_to root_path, class: "icon-footer" do %>
+                <div><i class="uil uil-home"></i></div id="orange-highlight"> Home
+            <% end %>
         <% end %>
       <% end %>
     </div>

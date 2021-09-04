@@ -3,9 +3,15 @@ class OrderItemsController < ApplicationController
     @order_item = OrderItem.new
     @product_id = Product.find(params[:product_id])
     @user_orders = Order.where(user: current_user)
+
     @order = @user_orders.last
+    if @order.nil?
+      @order = Order.new(store: Store.all.sample, user: current_user)
+    end
     @order_item.product = @product_id
     @order_item.order = @order
+    @order_item.save!
+
 
     if @order_item.save!
       redirect_to new_qr_code_path
@@ -26,7 +32,7 @@ class OrderItemsController < ApplicationController
     @all_order_items = OrderItem.where(order: @last_order).order('created_at DESC')
     @total_price = 0
     @all_order_items.each do |item|
-      @total_price = @total_price + item.product.price
+    @total_price = @total_price + item.product.price
     end
   end
 
