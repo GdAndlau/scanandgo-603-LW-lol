@@ -1,7 +1,7 @@
   <%= render 'shared/navbar' %>
 
 
-    <%= form_tag stores_path, method: :get, data: {autocomplete_stores: @autocomplete_stores.to_json}, id: "autocomplete-form", class: "navbar" do  %>
+    <%= form_tag stores_path, method: :get, data: {autocomplete_stores: @autocomplete_stores.to_json}, id: "autocomplete-form", autocomplete: "off", class: "navbar" do  %>
       <%= text_field_tag :query,
         params[:query], id: "autoComplete",
         class: "search-input",
