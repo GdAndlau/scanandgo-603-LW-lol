@@ -1,49 +1,6 @@
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-  .nav-container{
-    max-width: 100%;
-    background: linear-gradient(rgba(218, 82, 254, 0.7), rgba(112, 58, 242, 0.7));
-    padding: 15px;
-    position: sticky;
-    top: 0;
-
-
-
-    h1 {
-      font-family: 'Montserrat';
-      font-weight: 700;
-      font-size: 25px;
-    }
-  }
-
-  .nav-content{
-    display: flex;
-    justify-content: center;
-  }
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-  .nav-content{
-    display: flex;
-    justify-content: center;
-  }
-
-}
-
 .navbar {
   background-color: $main-color;
-  border-radius: 0 0 0 30px;
-  height: 100px;
+  height: 121px;
   display: flex;
   justify-content: center;
   align-items: center;
