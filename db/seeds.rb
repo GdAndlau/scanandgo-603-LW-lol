@@ -34,16 +34,27 @@ puts "------------"
 puts "1. Creating 3 users.."
 User.create!(
   email: "scanandgo1@scanandgo.com",
-  password: "scanandgo1@scanandgo.com"
+  password: "scanandgo1@scanandgo.com",
+  first_name: "John"
   )
 User.create!(
   email: "scanandgo2@scanandgo.com",
-  password: "scanandgo2@scanandgo.com"
+  password: "scanandgo2@scanandgo.com",
+  first_name: "Marco"
   )
 User.create!(
   email: "scanandgo3@scanandgo.com",
-  password: "scanandgo3@scanandgo.com"
+  password: "scanandgo3@scanandgo.com",
+  first_name: "Maria"
+
   )
+
+User.create!(
+  email: "jessica@jessica.com",
+  password: "jessica@jessica.com",
+  first_name: "Jessica"
+  )
+
 puts "Users created"
 puts "------------"
 puts "------------"
