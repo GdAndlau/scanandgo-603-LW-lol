@@ -181,12 +181,12 @@ Store.create!(
 Store.create!(
   name: "ROSSMAN",
   address: "Kaiser-Wilhelm-Platz 1-2, 10827 Berlin",
-  opening_hours: "8 - 10 pm"
+  opening_hours: "8 am- 10 pm"
   )
 Store.create!(
   name: "ROSSMAN",
   address: "Manfred-von-Richthofen-Straße 14, 12101 Berlin",
-  opening_hours: "9 - 9 pm"
+  opening_hours: "9 am - 9 pm"
   )
 Store.create!(
   name: "ROSSMAN",
