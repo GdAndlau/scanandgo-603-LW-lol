@@ -48,6 +48,7 @@
   padding: 30px 15px;
   width: 100%;
   border-radius: 20px;
+  margin-top: 30px;
 }
 
 .striked-text {
@@ -56,7 +57,7 @@
 
   a {
     padding: 0px 15px;
-    color: black;
+    color: white;
     font-size: 15px;
   }
 
@@ -69,9 +70,9 @@
 
 .sign-up-text {
   text-align: center;
-  color: black;
+  color: white;
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .logo {
@@ -101,7 +102,6 @@
 } */
 
 .color-card-style {
-  background-color: $lighter-violet;
   height: 200px;
   border-radius: 30px 30px 0 0;
   margin-top: -200px;
@@ -173,3 +173,18 @@
 .title-text-color {
   color:black;
 }
+
+.home-text-container img {
+  width: 40%;
+  padding: 0px 0px 20px 0px;
+  margin: auto;
+}
+
+.home-text-container h1 {
+  font-size: 18px;
+  justify-content: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+
+}
+
