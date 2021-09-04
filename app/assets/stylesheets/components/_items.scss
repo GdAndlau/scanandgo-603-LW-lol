@@ -4,16 +4,17 @@
  width: 95%;
  margin: auto;
  margin-bottom: 8px;
+ margin-top: 30px;
  border-radius: 8px;
  padding: 10px;
  // border-bottom: purple;
- box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 12px 0px;
+ box-shadow: rgba(136, 136, 136, 0.2) 0px 7px 12px 0px;
  background-color: white;
 }
 
 .items i {
    margin-right: 28px;
-   color: $main-color;
+   color: #dbdbdb;
    opacity: 0.7;
    font-size: 24px;
    vertical-align: middle;

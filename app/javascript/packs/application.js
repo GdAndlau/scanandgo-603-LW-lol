@@ -32,12 +32,15 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { getCoordinates } from '../plugins/getCoordinates';
 import {food}  from '../food';
 import { handlePopups } from '../popup'
+import { autoCompleteJS } from '../plugins/autoComplete';
 
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
      getCoordinates();
+      autoCompleteJS();
+
  food()
  handlePopups()
 

@@ -5,7 +5,11 @@ MoneyRails.configure do |config|
 
   # To set the default currency
   #
+<<<<<<< HEAD
   config.default_currency = :eur
+=======
+   config.default_currency = :eur
+>>>>>>> f891dfe373e5887862076cdd1089007004a03296
 
   # Set default bank object
   #
