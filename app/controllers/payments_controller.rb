@@ -31,7 +31,7 @@ class PaymentsController < ApplicationController
         # images: [@order_item.product.image_url],
         amount: order.price_cents,
         currency: 'eur',
-        quantity: order.order_items.count #Needs to be fixed
+        quantity:  1
       }],
       success_url: qrcode_url(order),
       cancel_url: new_qr_code_url(order)
