@@ -23,15 +23,22 @@
 
   h1 {
     font-family: $main-font;
-    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 2px;
     color: white;
-    font-size: 33px;
+    font-weight: 600;
     margin-bottom: 30px;
   }
 
   span {
     font-weight: 900;
     display: block;
+  }
+
+  img {
+    width: 30%;
+    padding: 0px 0px 20px 0px;
+    margin: auto;
   }
 }
 
@@ -61,7 +68,7 @@
   }
 
   .line {
-    border-top: 1px solid #A5A5A5;
+    border-top: 1px solid white;
     flex: 1 1 auto;
     margin: 10px 0px;
   }
@@ -69,7 +76,7 @@
 
 .sign-up-text {
   text-align: center;
-  color: black;
+  color: white;
   font-size: 15px;
   margin-top: 10px;
 }
@@ -78,48 +85,20 @@
   margin-bottom: 70px;
 }
 
-
-/* .options {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-}
-
-.option-left {
-  text-decoration: none;
-  color: black;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: underline;
-
-}
-
-.option-right {
-  font-size: 15px;
-  text-decoration: none;
-  color: black;
-} */
-
-.color-card-style {
+/* .color-card-style {
   background-color: $lighter-violet;
   height: 200px;
   border-radius: 30px 30px 0 0;
   margin-top: -200px;
-}
+} */
 
 .background-image-edit{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // background: linear-gradient(
-  //   to bottom,
-  //   rgba(218, 82, 254, 0.7),
-  //   rgba(112, 58, 242, 0.7)
-  // ), url("https://res.cloudinary.com/dzlzazila/image/upload/v1629820832/image_1_a1wogm.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
-  // padding-bottom: 30px;
   margin: 0;
 }
 
@@ -142,17 +121,9 @@
     padding-top: 20px;
 }
 
-.option-left {
+a.option-right {
     text-decoration: none;
-    color: $main-color;
-    font-weight: 600;
-    text-decoration: underline;
-
-}
-
-.option-right {
-    text-decoration: none;
-    color: $main-color;
+    color: white;
 }
 
 .option-out {
@@ -172,18 +143,4 @@
 
 .title-text-color {
   color:black;
-}
-
-.home-text-container img {
-  width: 40%;
-  padding: 0px 0px 20px 0px;
-  margin: auto;
-}
-
-.home-text-container h1 {
-  font-size: 18px;
-  justify-content: center;
-  letter-spacing: 2px;
-  margin-bottom: 40px;
-
 }
