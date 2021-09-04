@@ -68,14 +68,16 @@
   overflow: hidden;
   color: $main-color;
   width: 280px;
+  background-color: white;
 }
 
 .autoComplete_wrapper ul {
   position: absolute;
   z-index: 1;
   list-style: none;
+  padding: 0;
+  border-radius: 10px;
   }
-
 
 @media only screen and (min-width: 350px) {
   .search-input {

@@ -4,7 +4,7 @@
     <%= form_tag stores_path, method: :get, data: {autocomplete_stores: @autocomplete_stores.to_json}, id: "autocomplete-form", class: "navbar" do  %>
       <%= text_field_tag :query,
         params[:query], id: "autoComplete",
-        class: "search-input form-control",
+        class: "search-input",
         placeholder: "Search for shops in your area"
       %>
     <% end %>
