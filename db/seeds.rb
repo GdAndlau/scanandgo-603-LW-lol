@@ -51,32 +51,32 @@ puts "2. Creating 35 stores"
 Store.create!(
   name: "Zara",
   address: "Eberswalder Strasse 3, 10789 Berlin",
-  opening_hours: "9 - 20"
+  opening_hours: "9 am - 8 pm"
   )
 Store.create!(
   name: "Zara",
   address: "Friedrichstraße 88, 10117 Berlin",
-  opening_hours: "9 - 20"
+  opening_hours: "9 am - 8pm"
   )
 Store.create!(
   name: "Zara",
   address: "Leipziger Pl. 12-13, 10117 Berlin",
-  opening_hours: "10 - 20"
+  opening_hours: "10 am - 9pm"
   )
 Store.create!(
   name: "Zara",
   address: "Tauentzienstraße 7a, 10789 Berlin",
-  opening_hours: "10 - 20"
+  opening_hours: "10 am- 8pm"
   )
 Store.create!(
   name: "H&M",
   address: "Kurfürstendamm 237, 10719 Berlin",
-  opening_hours: "9 - 18"
+  opening_hours: "9 am - 6 pm"
   )
 Store.create!(
   name: "H&M",
   address: "Karl-Marx-Straße 92-98, 12043 Berlin",
-  opening_hours: "10 - 21"
+  opening_hours: "10 am- 9 pm"
   )
 Store.create!(
   name: "H&M",
@@ -125,12 +125,12 @@ Store.create!(
   )
 Store.create!(
   name: "TK Maxx",
-  address: "Kant Center, Wilmersdorfer Str. 108, 10627 Berlin",
+  address: "Wilmersdorfer Str. 108, 10627 Berlin",
   opening_hours: "9 - 21"
   )
 Store.create!(
   name: "TK Maxx",
-  address: "Kaiser Wilhelm Passage, Hauptstraße 141-144, 10827 Berlin",
+  address: "Hauptstraße 141-144, 10827 Berlin",
   opening_hours: "10 - 20"
   )
 Store.create!(
@@ -145,7 +145,7 @@ Store.create!(
   )
 Store.create!(
   name: "Decathlon",
-  address: "Wilmersdorfer Str. 46 in den Wilmersdorfer Arcaden, 10627 Berlin",
+  address: "Wilmersdorfer Str. 46, 10627 Berlin",
   opening_hours: "10 - 20"
   )
 Store.create!(
@@ -210,7 +210,7 @@ Store.create!(
   )
 Store.create!(
   name: "GALERIA",
-  address: "Alexanderpl. 9, 10178 Berlin",
+  address: "Tempelhofer Damm 191, 12099 Berlin",
   opening_hours: "11 - 19"
   )
 Store.create!(
