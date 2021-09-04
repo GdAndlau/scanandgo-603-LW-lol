@@ -21,7 +21,7 @@
 
       <%= link_to 'Confirm payment', order_path(@last_order), class:"main-button pay-button" %>
       <div class="continue-shopping">
-        <%= link_to "Continue Shopping", pages_path  %>
+        <%= link_to "Continue Shopping", new_qr_code_path  %>
       </div>
     </div>
   <%= render 'shared/footer' %>
