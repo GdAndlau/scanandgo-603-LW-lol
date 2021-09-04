@@ -14,13 +14,22 @@
   <div class="container-footer">
 
 
-    <% if current_uri == "/users/edit" %>
+    <% if current_uri == "/users/edit" && current_user.present? %>
        <%= link_to edit_user_registration_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
-              <div id="orange-highlight"><i class="uil uil-setting "></i></div>User
+              <div id="orange-highlight"><i class="uil uil-user "></i></div><%= current_user.first_name %>
           <% end %>
-    <% else %>
+    <% elsif current_uri == "/users/edit" && current_user.nil? %>
+           <%= link_to edit_user_registration_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
+              <div id="orange-highlight"><i class="uil uil-user "></i></div>User
+          <% end %>
+    <% elsif current_user.present? %>
         <%= link_to edit_user_registration_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
-          <div><i class="uil uil-setting "></i></div>User
+          <div><i class="uil uil-user "></i></div><%= current_user.first_name %>
+          <% end %>
+
+    <% else %>
+          <%= link_to edit_user_registration_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
+          <div><i class="uil uil-user "></i></div>User
           <% end %>
     <% end %>
 
@@ -37,18 +46,18 @@
 
     <% if current_uri == "/order_items" %>
        <%= link_to order_items_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
-              <div id="orange-highlight"><i class="uil uil-shopping-bag"></i></div>Basket
+              <div id="orange-highlight"><i class="uil uil-shopping-bag"></i><div id="basket-counter"><%= items_count %></div></div>Basket
           <% end %>
     <% else %>
         <%= link_to order_items_path, class: "icon-footer",  resource: current_user, resource_name: :user do %>
-              <div><i class="uil uil-shopping-bag"></i></div>Basket
+              <div><i class="uil uil-shopping-bag"></i><div id="basket-counter"><%= items_count %></div></div>Basket
           <% end %>
     <% end %>
 
 
     <div class="icon popup" id="open-popup-trigger">
       <% if !@last_order.nil? && !@last_order.completed? && items_count > 0 %>
-            <a class="icon-footer"><div><i class="uil uil-home" ></i></div>Home</a>
+            <a class="icon-footer"><div><i class="uil uil-home" ></i></div>Stores</a>
             <span class="popuptext" id="myPopup">
               <i class="fas fa-exclamation-triangle"></i><br>
               Your current session will be destroy and you will be logged out of the shop <br><br>
@@ -65,11 +74,11 @@
         <% else %>
           <% if current_uri == "/stores" %>
               <%= link_to root_path, class: "icon-footer" do %>
-                <div><i class="uil uil-home"></i></div id="orange-highlight">Home
+                <div><i class="uil uil-home"></i></div id="orange-highlight">Stores
               <% end %>
           <% else %>
             <%= link_to root_path, class: "icon-footer" do %>
-                <div><i class="uil uil-home"></i></div id="orange-highlight"> Home
+                <div><i class="uil uil-home"></i></div id="orange-highlight">Stores
             <% end %>
         <% end %>
       <% end %>

@@ -34,16 +34,27 @@ puts "------------"
 puts "1. Creating 3 users.."
 User.create!(
   email: "scanandgo1@scanandgo.com",
-  password: "scanandgo1@scanandgo.com"
+  password: "scanandgo1@scanandgo.com",
+  first_name: "John"
   )
 User.create!(
   email: "scanandgo2@scanandgo.com",
-  password: "scanandgo2@scanandgo.com"
+  password: "scanandgo2@scanandgo.com",
+  first_name: "Marco"
   )
 User.create!(
   email: "scanandgo3@scanandgo.com",
-  password: "scanandgo3@scanandgo.com"
+  password: "scanandgo3@scanandgo.com",
+  first_name: "Maria"
+
   )
+
+User.create!(
+  email: "jessica@jessica.com",
+  password: "jessica@jessica.com",
+  first_name: "Jessica"
+  )
+
 puts "Users created"
 puts "------------"
 puts "------------"
@@ -242,7 +253,7 @@ Product.create!(
   title: "Jeans",
   description: "Fit Jeans",
   price: 45,
-  price_cents: 45000,
+  price_cents: 4500,
   store: Store.where(name: "H&M").first,
   image: "ftoamgssapv96bdq5qkt"
 
@@ -252,7 +263,7 @@ Product.create!(
   title: "Watch",
   description: "Amelia watch",
   price: 110,
-  price_cents: 110000,
+  price_cents: 11000,
 
   store: Store.where(name: "Rewe").first,
   image: "amelia_holzkern_holzuhr_woodwatch_fa_200320q_4_drv3wv"
@@ -262,7 +273,7 @@ Product.create!(
   title: "Watch",
   description: "Amelia watch",
   price: 100,
-  price_cents: 100000,
+  price_cents: 10000,
   store: Store.where(name: "Douglas").first,
   image: "amelia_holzkern_holzuhr_woodwatch_fa_200320q_4_drv3wv"
   )
