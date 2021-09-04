@@ -19,9 +19,6 @@
     <div class="order-details">
       <div class="row"><p><em>Ordered Items</em></p><b><p id ="plus-sign">+</b></p></div>
       <div class="row"><p>Order</p><p><%= @total_price %>EUR</p></div>
-      <div class="row"><p>VAT</p><p><%= vat = @total_price * 0.19 %>EUR</p></div>
-      <div class="row"><p>Summary</p><p><%= @total_price + vat %>EUR</p></div>
-
     </div>
 
 <button id="pay" class="btn btn-primary">Pay</button>
