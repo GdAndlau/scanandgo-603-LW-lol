@@ -7,6 +7,25 @@ class OrderItemsController < ApplicationController
     @order_item.product = @product_id
     @order_item.order = @order
 
+    product = Product.find(params[:product_id])
+      order = @user_orders.last
+      order  = Order.update(@order_item.product = product, price_cents = product.price, state ='pending', user_id = current_user.id)
+      session = Stripe::Checkout::Session.create(
+        payment_method_types: ['card'],
+        line_items: [{
+          name: product.name,
+          images: [product.photo_url],
+          amount: product.price_cents,
+          currency: 'eur',
+          quantity: @all_order_items.count #Needs to be fixed
+        }],
+        success_url: order_url(order),
+        cancel_url: order_url(order)
+      )
+
+      order.update(checkout_session_id: session.id)
+      redirect_to new_orders_payment_path(order)
+
     if @order_item.save!
       redirect_to new_qr_code_path
     else
@@ -26,7 +45,7 @@ class OrderItemsController < ApplicationController
     @all_order_items = OrderItem.where(order: @last_order).order('created_at DESC')
     @total_price = 0
     @all_order_items.each do |item|
-      @total_price = @total_price + item.product.price
+    @total_price = @total_price + item.product.price
     end
   end
 
