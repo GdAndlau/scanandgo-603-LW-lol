@@ -1,76 +1,17 @@
-.app-info {
-  text-align: left;
-  padding: 60px;
-  max-width: 1128px;
-  position: relative;
-  color: #fff;
-}
-
-.landing-background {
+#landing-home {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $main-color;
   background-size: cover;
-  height: max-content;
-  
-
-  
+  background-position: center;
 }
 
-.inner-text {
-  padding-top: 48px;
-  padding-right: 48px;
-  min-width: 448px;
-  max-width: 588px;
-  position: relative;
-  display: flex;
-
-  h2 {
-    margin: 40px 0px 40px 0px;
-    display: block;
-    font-size: 14px;
-    margin: auto;
-  }
-
-  p {
-    margin-bottom: 10px;
-    text-align: left;
-  }
-
-  h1 {
-    font-size: 36px
-  }
-  
-  img {
-    width: 200px;
-  }
-
-}
-
-
-p
-
-.get-app {
-  margin: 0px;
-  text-align: left ;
-}
-
-.get-app p {
-  display: inline-flex;
-}
-
-
-.landing-photo {
-  display: block;
-}
-
-.landing-photo img {
-  width: 250px;
-}
-
-
-.landing-box {
-  display: flex;
-  justify-content: center;
-  padding: 80px 0px;
+.landing-image img {
+  width: 40vw;
 }
 
 .mdi-36px {
@@ -78,14 +19,8 @@ p
   margin-right: 10px
 }
 
-.buttons-container {
-  margin: 30px 0px;
-
+.landing-container {
+  margin: 0px;
 }
-
-.font-weight-light {
-  font-weight: 400 !important;
-}
-
 
 
