@@ -16,23 +16,37 @@
 }
 
 .inner-text {
-  padding-top: 88px;
+  padding-top: 48px;
   padding-right: 48px;
   min-width: 448px;
   max-width: 588px;
   position: relative;
+  display: flex;
+
+  h2 {
+    margin: 40px 0px 40px 0px;
+    display: block;
+    font-size: 14px;
+    margin: auto;
+  }
+
+  p {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 36px
+  }
+  
+  img {
+    width: 200px;
+  }
+
 }
 
-.inner-text h1 {
-  margin-bottom: 24px;
-  display: block;
 
-}
-
-.inner-text p {
-  margin-bottom: 40px;
-  text-align: left;
-}
+p
 
 .get-app {
   margin: 0px;
@@ -55,6 +69,23 @@
 
 .landing-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 80px 0px;
 }
+
+.mdi-36px {
+  font-size: 39px;
+  margin-right: 10px
+}
+
+.buttons-container {
+  margin: 30px 0px;
+
+}
+
+.font-weight-light {
+  font-weight: 400 !important;
+}
+
+
+
