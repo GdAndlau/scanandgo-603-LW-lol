@@ -1,17 +1,19 @@
 #landing-home {
   min-height: 100vh;
-  padding: 0 9%;
-  padding-top: 7.5rem;
+  padding-left: 8rem;
+  padding-top: 4.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $main-color;
+  background-color: white;
   background-size: cover;
   background-position: center;
 }
 
 .landing-image img {
-  width: 40vw;
+  width:35vw;
+  justify-content: right;
+  vertical-align: middle;
 }
 
 .mdi-36px {
@@ -22,5 +24,69 @@
 .landing-container {
   margin: 0px;
 }
+
+.landing-content p {
+  margin-right: 7rem;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.landing-content h4 {
+  font-family: "Montserrat", "sans-serif";
+}
+
+.landing-content h3 {
+  font-size: 50px;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 800;
+  color: $secondary-color;
+  padding-bottom: 30px;
+
+}
+.landing-content ul {
+  list-style: none;
+  padding: 0px;
+ 
+}
+
+.landing-content li {
+  padding: 0px 0px 16px 0px; 
+  font-family: "Montserrat", "sans-serif";
+
+  
+}
+
+.btn-outline-dark {
+  background-color: #343A40;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  margin-right: 20px;
+  margin-top: 30px;
+
+}
+
+.font-weight-light {
+  font-size: 12px;
+  margin-top: 0;
+  font-weight: 400 !important;
+}
+
+.landingheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $secondary-color;
+  box-shadow: 0 0.1rem 1rem rgba(0,0,0, 0.1);
+  padding: 1.5rem 8rem;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 4vw;
+
+  }
+}
+
 
 
