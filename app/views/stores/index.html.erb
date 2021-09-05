@@ -16,24 +16,26 @@
         <% @rounded_distance = "#{store.distance_from_user.round(1)} km" %>
       <% end %>
 
-    <div class="store-card">
-      <%= image_tag "logo-douglas.jpg" %>
-        <div class="store-card-content">
-          <div class="store-card-head">
-            <p class="store-title"><%= store.name.upcase %></p>
-            <a class="info-icon" href="/stores/<%=store.id%>"><i class="fas fa-info-circle"></i></a>
+      <%= link_to store_path(store) do  %>
+          <div class="store-card">
+            <%= cl_image_tag(store.logo) %>
+              <div class="store-card-content">
+                <div class="store-card-head">
+                  <p class="store-title"><%= store.name.upcase %></p>
+                  <a class="info-icon" href="/stores/<%=store.id%>"><i class="fas fa-info-circle"></i></a>
+                </div>
+                <p class="store-address"><%= store.address %></p>
+                <% if store.distance_from_user.present? %>
+                  <div class="store-location">
+                    <i class="uil uil-location-point"> </i>
+                    <p class="store-distance"><%= @rounded_distance %> away</p>
+                  </div>
+                <% else %>
+                  <p class="store-distance"></p>
+                <% end %>
+              </div>
           </div>
-          <p class="store-address"><%= store.address %></p>
-          <% if store.distance_from_user.present? %>
-            <div class="store-location">
-              <i class="uil uil-location-point"> </i>
-              <p class="store-distance"><%= @rounded_distance %> away</p>
-            </div>
-          <% else %>
-            <p class="store-distance"></p>
-          <% end %>
-        </div>
-    </div>
+        <% end %>
   <% end%>
 </div>
 <%= render 'shared/footer' %>

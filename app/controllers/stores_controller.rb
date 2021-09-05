@@ -3,31 +3,27 @@ class StoresController < ApplicationController
     @order = Order.new
     if coordinates_present?
       @stores = Store.near([session[:langtitude], session[:longtitude]], 40)
+      @stores = Store.all if @stores.length.zero?
     else
       @stores = Store.all
     end
 
     if params[:query].present?
       @stores = @stores.where("name ILIKE ?", "%#{params[:query]}%")
-      if @stores.length == 0
-        return render "shared/missingshops"
-      elsif @stores.length == 1
-        return redirect_to store_path(@stores.first)
+      return render "shared/missingshops" if @stores.length.zero?
+      return redirect_to store_path(@stores.first) if @stores.length == 1
+    end
+
+    if coordinates_present?
+      @stores = @stores.to_a.map do |store|
+        distance = store.distance_to([session[:langtitude], session[:longtitude]])
+        store.distance_from_user = distance.present? ? distance.round(3) : 0
+        store
+      end
+      @stores.sort_by do |store|
+        store.distance_from_user
       end
     end
-
-  if coordinates_present?
-    @stores = @stores.to_a.map do |store|
-      distance = store.distance_to([session[:langtitude], session[:longtitude]])
-      store.distance_from_user = distance.present? ? distance.round(3) : 0
-
-      store
-    end
-
-    @stores.sort_by do |store|
-      store.distance_from_user
-    end
-  end
 
     @autocomplete_stores = @stores.map do |store|
       if store.distance_from_user.present? && store.distance_from_user < 1
@@ -35,7 +31,6 @@ class StoresController < ApplicationController
       elsif store.distance_from_user.present? && store.distance_from_user >= 1
         @rounded_distance = "#{store.distance_from_user.round(1)} km"
       end
-
 
       if @rounded_distance.present?
       {
