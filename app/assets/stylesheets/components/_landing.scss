@@ -1,29 +1,45 @@
-#landing-home {
-  min-height: 100vh;
-  padding-left: 10rem;
-  padding-top: 4.5rem;
-  padding-right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  background-size: cover;
-  background-position: center;
+.landing-home {
+  justify-content: flex-start;
 }
 .landing-image {
-  min-height: 90vh;
-  min-width: 50%;
-  
-  background: #2C80A4;
-  box-shadow: 0 0.1rem 1rem rgba(0,0,0, 0.1);
-  
+  width: 50%;
+  height: 100vh;
+  min-height: 35em;
+  max-height: 60em;
+  background-color: $secondary-color;
   display: flex;
   align-items: center;
-
+  flex-wrap: wrap;
 }
 
+.landing-home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  
+}
+
+.landingheader {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.landing-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100vh;
+  min-height: 35em;
+  max-height: 60em;
+  padding: 6vw;
+  justify-content: center;
+} 
+
 .landing-image img {
-  max-width: 92vh;
+  max-width: 100%;
   justify-content: right;
   vertical-align: middle;
 }
@@ -33,9 +49,6 @@
   margin-right: 10px
 }
 
-.landing-container {
-  margin: 0px;
-}
 
 .landing-content p {
   margin-right: 1rem;
@@ -45,29 +58,20 @@
   font-weight: 500;
 }
 
-.landing-content h4 {
+.landing-title h4 {
   font-family: "Montserrat", "sans-serif";
+  font-size: 1.3em ;
+  padding-top: 2rem;
+  font-weight: 60o;
 }
 
 .landing-title h3 {
-  font-size: 50px;
+  font-size: 3.5em;
   font-family: "Montserrat", "sans-serif";
-  font-weight: 800;
+  font-weight: 900;
   color: $secondary-color;
+  letter-spacing: 0.6 vw;
 
-}
-.landing-content ul {
-  list-style: none;
-  padding: 0px;
- 
-}
-
-
-.landing-content li {
-  padding: 0px 0px 16px 0px; 
-  font-family: "Montserrat", "sans-serif";
-
-  
 }
 
 .btn-outline-dark {
@@ -87,15 +91,14 @@
 }
 
 .landingheader {
-  position: fixed;
+  position: sticky;
+  justify-content: space-around;
   top: 0;
-  left: 0;
   width: 100%;
   background: $secondary-color;
-  box-shadow: 0 0.1rem 1rem rgba(0,0,0, 0.1);
-  padding: 1rem 10rem;
-  display: flex;
-  align-items: center;
+  box-shadow: 0 0.2em 0.4em rgba($color: #000000, $alpha: 0.15);
+  padding: 1em 2em 1em 1em;
+  z-index: 99;
 
   img {
     width: 10vw;
@@ -103,5 +106,9 @@
   }
 }
 
+.landing-padding {
+  padding: 0;
+
+}
 
 
