@@ -10,17 +10,22 @@
     <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
-    <%# gecoding content - start%>
     <meta charset="utf-8">
-    <%#<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">%>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
 
+    <%# pws %>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="<%= asset_path 'manifest.json' %>">
+    <%= render 'shared/ios_pwa_links' %>
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <browserconfig><msapplication><tile><square70x70logo src="/ms-icon-70x70.png"/><square150x150logo src="/ms-icon-150x150.png"/><square310x310logo src="/ms-icon-310x310.png"/><TileColor>#ffffff</TileColor></tile></msapplication></browserconfig>
+
   </head>
   <body>
-<!--        <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p> -->
     <%= yield %>
   </body>
 </html>
