@@ -1,12 +1,8 @@
-.landing-home {
-  justify-content: flex-start;
-}
 .landing-image {
   width: 50%;
   height: 100vh;
   min-height: 35em;
   max-height: 60em;
-  background-color: $secondary-color;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -16,6 +12,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  background-color: $secondary-color;
 
   
 }
@@ -33,9 +30,9 @@
   width: 50%;
   height: 100vh;
   min-height: 35em;
-  max-height: 60em;
-  padding: 6vw;
+  padding: 9vw;
   justify-content: center;
+ 
 } 
 
 .landing-image img {
@@ -60,7 +57,7 @@
 
 .landing-title h4 {
   font-family: "Montserrat", "sans-serif";
-  font-size: 1.3em ;
+  font-size: 1.1em ;
   padding-top: 2rem;
   font-weight: 60o;
 }
@@ -69,7 +66,7 @@
   font-size: 3.5em;
   font-family: "Montserrat", "sans-serif";
   font-weight: 900;
-  color: $secondary-color;
+  color: white;
   letter-spacing: 0.6 vw;
 
 }
@@ -97,11 +94,11 @@
   width: 100%;
   background: $secondary-color;
   box-shadow: 0 0.2em 0.4em rgba($color: #000000, $alpha: 0.15);
-  padding: 1em 2em 1em 1em;
+  padding: 1em;
   z-index: 99;
 
   img {
-    width: 10vw;
+    width: 5vw;
 
   }
 }
