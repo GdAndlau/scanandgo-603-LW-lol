@@ -1,9 +1,13 @@
+.scanner-container {
+  height: 100vh;
+}
+
 .scanner-background{
-  background-color: lightgrey;
-  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #e5e5e5;
+  border-radius: 20px;
 }
 
 .scanner-background-additional  {
@@ -22,7 +26,6 @@
   width: 220px;
   margin: 0 auto;
 }
-
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
