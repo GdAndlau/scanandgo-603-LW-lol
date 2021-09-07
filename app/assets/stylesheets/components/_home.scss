@@ -58,19 +58,13 @@
 }
 
 .striked-text {
-  display: flex;
+  text-align: center;
   margin-top: 20px;
 
   a {
     padding: 0px 15px;
     color: black;
     font-size: 15px;
-  }
-
-  .line {
-    border-top: 1px solid white;
-    flex: 1 1 auto;
-    margin: 10px 0px;
   }
 }
 

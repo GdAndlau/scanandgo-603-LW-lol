@@ -9,9 +9,7 @@
     <div class="inputs-card">
       <%= render 'shared/login', resource: User.new, resource_name: :user %>
        <div class="striked-text">
-       <div class="line"></div>
        <%= link_to('Reset Password', new_user_registration_path, class: "option-right") %>
-        <div class="line"></div>
        </div>
       <%= link_to('Sign Up', new_user_registration_path, class: "sign-up-text") %>
     </div>
