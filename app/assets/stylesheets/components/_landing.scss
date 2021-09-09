@@ -29,7 +29,7 @@
   width: 50%;
   height: 100vh;
   min-height: 35em;
-  padding: 7vw 10vw 7vw 10vw;
+  padding: 7vw 10vw 5vw 10vw;
  
 } 
 
@@ -73,13 +73,12 @@
 }
 
 .btn-outline-dark {
-  background-color: #343A40;
-  border: none;
+  background-color: transparent;
   color: white;
   border-radius: 4px;
   max-width: 15em;
-  
   justify-content: space-between;
+  border: 1.5px solid white;
 
 }
 
@@ -102,7 +101,7 @@
 }
 
 .landing-qr img {
-  width: 20vh;
+  width: 22vh;
   border-radius: 1vh;
 }
 
