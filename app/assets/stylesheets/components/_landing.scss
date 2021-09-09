@@ -1,0 +1,113 @@
+.landing-image {
+  width: 50%;
+  height: 100vh;
+  min-height: 35em;
+  max-height: 60em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.landing-home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $secondary-color;
+
+  
+}
+
+.landingheader {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.landing-content {
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100vh;
+  min-height: 35em;
+  padding: 7vw 10vw 5vw 10vw;
+ 
+} 
+
+.landing-image img {
+  width: 100%;
+  justify-content: right;
+  vertical-align: middle;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mdi-36px {
+  font-size: 39px;
+  margin-right: 10px
+}
+
+
+.landing-content p {
+  margin-right: 1rem;
+  margin-top: 3rem;
+  font-family: "Montserrat", "sans-serif";
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.landing-title h4 {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 1.1em ;
+  padding-top: 2rem;
+  font-weight: 600;
+  line-height: 5vh;
+}
+
+.landing-title h3 {
+  font-size: 3.5em;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.6 vw;
+
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+  max-width: 15em;
+  justify-content: space-between;
+  border: 1.5px solid white;
+
+}
+
+.font-weight-light {
+  font-size: 12px;
+  margin-top: 0;
+  font-weight: 400 !important;
+}
+
+
+.landing-padding {
+  padding: 0;
+
+}
+
+.landing-app-container  {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.landing-qr img {
+  width: 22vh;
+  border-radius: 1vh;
+}
+
+.landing-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5vw;
+}
