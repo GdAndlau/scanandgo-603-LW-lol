@@ -1,6 +1,4 @@
 {
-  "background_color": "white",
-  "description": "The new shopping experience",
  "name": "App",
  "icons": [
   {
@@ -41,4 +39,3 @@
   }
  ]
 }
-
