@@ -12,6 +12,11 @@
  background-color: white;
 }
 
+.items {
+   display: flex;
+   align-items: center;
+}
+
 .items i {
    margin-right: 28px;
    color: #dbdbdb;
